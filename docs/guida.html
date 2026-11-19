@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guida all'utilizzo di Cardoteca</title>
+<meta name="description" content="Come si usa Cardoteca: aggiungere carte, collezione, mancanti, prezzi Cardmarket, album, mazzi, scambi, backup.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Guida all'utilizzo</h1>
+<p class="muted">Cardoteca · Aggiornata alla versione 1.9</p>
+<p>Questa guida spiega come si usa Cardoteca, passo per passo. I nomi tra «» sono quelli che trovi scritti nell'app:
+schede, pulsanti, menu e impostazioni.</p>
+
+<nav class="toc" aria-labelledby="indice">
+<h2 id="indice">Indice</h2>
+<ol>
+<li><a href="#installare">Installare e aggiornare</a></li>
+<li><a href="#primo-avvio">Primo avvio</a></li>
+<li><a href="#come-e-fatta">Come è fatta l'app</a></li>
+<li><a href="#aggiungere">Aggiungere carte</a></li>
+<li><a href="#collezione">La collezione</a></li>
+<li><a href="#mancanti">Le carte che mancano</a></li>
+<li><a href="#prezzi">I prezzi</a></li>
+<li><a href="#aggiornare-prezzi">Quando si aggiornano i prezzi</a></li>
+<li><a href="#album">Album, playset e box</a></li>
+<li><a href="#collezioni-speciali">Collezioni speciali</a></li>
+<li><a href="#mazzi">Mazzi</a></li>
+<li><a href="#scambi">Scambi</a></li>
+<li><a href="#account">Più telefoni con un account</a></li>
+<li><a href="#backup">Backup e cambio di telefono</a></li>
+<li><a href="#impostazioni">Impostazioni</a></li>
+<li><a href="#domande">Domande frequenti e problemi</a></li>
+</ol>
+</nav>
+
+<section id="installare">
+<h2>1. Installare e aggiornare</h2>
+<h3>Installare</h3>
+<ol>
+<li>Dal telefono apri la pagina delle <a href="https://github.com/Pizz089/Cardoteca/releases">versioni di Cardoteca</a> e,
+nella versione segnata «Latest» (per esempio «Cardoteca 1.9»), scarica il file <code>Cardoteca-build….apk</code>.</li>
+<li>Apri il file scaricato. Android chiede di permettere al browser (o all'app dei file) di installare app: concedilo.</li>
+<li>Play Protect, la protezione di Google, può avvisarti che l'app non è conosciuta, perché non arriva dal Play Store, e
+proporti di analizzarla. Puoi farla analizzare e poi installarla.</li>
+<li>Installa e apri Cardoteca.</li>
+</ol>
+<p>Serve Android 8.0 o successivo.</p>
+<h3>Aggiornare</h3>
+<p>Quando apri l'app, Cardoteca controlla da sola se c'è una versione nuova (al massimo una volta all'ora). Se c'è,
+compare un riquadro al centro con le novità e il peso del file.</p>
+<ol>
+<li>Tocca «Aggiorna»: il file si scarica.</li>
+<li>Tocca «Installa» e conferma quando te lo chiede Android.</li>
+</ol>
+<p>Con «Più tardi» il riquadro si chiude e resta una riga in alto: «Apri» lo riprende. La prima volta Android chiede il
+permesso di installare app da Cardoteca: l'app lo spiega e ti porta alla schermata giusta. Se hai acceso il backup
+automatico, prima di installare l'app fa un backup, quando l'ultimo ha più di un giorno.</p>
+<p>In Impostazioni → «Aggiornamenti dell'app» scegli il canale:</p>
+<ul>
+<li>«Stabile» (di partenza): solo le versioni che lo sviluppatore pubblica come stabili; arrivano meno spesso.</li>
+<li>«Anteprima»: ogni versione nuova appena pronta, anche più volte al giorno; può contenere errori.</li>
+</ul>
+<p>«Controlla ora» guarda subito. Se torni da Anteprima a Stabile resti sulla versione che hai finché non esce una
+stabile più recente.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="primo-avvio">
+<h2>2. Primo avvio</h2>
+<p>Al primo avvio, con la collezione vuota, l'app si apre su «Benvenuto in Cardoteca» e ti propone di portare qui la
+collezione che hai già:</p>
+<ul>
+<li>«Trasferisci da PokéCollezione»: c'è solo se hai PokéCollezione sul telefono (vedi <a href="#backup">Backup e cambio di
+telefono</a>).</li>
+<li>«Importa un backup»: scegli un file di backup di Cardoteca.</li>
+<li>«Ripristina da Google Drive»: se salvavi i backup sul tuo Drive.</li>
+<li>«Entra con un account»: se usi già Cardoteca con un account su un altro telefono.</li>
+<li>«Inizia da zero»: parti con la collezione vuota.</li>
+</ul>
+<p>Ogni importazione ti chiede conferma prima di cambiare i dati.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="come-e-fatta">
+<h2>3. Come è fatta l'app</h2>
+<h3>Le schede in basso</h3>
+<ul>
+<li>«Collezione»: le tue carte e i tuoi prodotti sigillati, divisi per espansione.</li>
+<li>«Mancanti»: le carte che ti mancano, espansione per espansione, con il costo per completarle.</li>
+<li>«Album»: i tuoi album, playset e box.</li>
+<li>«Mazzi»: le liste dei tuoi mazzi, con le carte che hai e quelle che mancano.</li>
+<li>«Cerca»: tutte le carte, con «Ce l'hai» e il numero di copie, oppure «Ti manca». Cerchi per nome, per numero o per
+sigla e numero come sono stampati sulla carta (per esempio «ASC 055»). I filtri «Tutte», «Le ho» e «Mi mancano»
+restringono l'elenco.</li>
+</ul>
+<h3>Il menu ⋯ e le Impostazioni</h3>
+<p>In alto a destra di ogni scheda c'è il menu ⋯. In fondo al menu c'è «Impostazioni». La freccia in alto ti riporta alla
+scheda di prima.</p>
+<h3>Il pulsante «Aggiungi»</h3>
+<p>In «Collezione», «Mancanti» e «Cerca» c'è il pulsante blu «Aggiungi», in basso a destra. Apre un menu con:</p>
+<ul>
+<li>«Scansiona carta»</li>
+<li>«Inserisci a mano»</li>
+<li>«Aggiungi più carte insieme»</li>
+<li>«Nuova collezione speciale»</li>
+</ul>
+<p>Nella scheda «Album» al suo posto c'è «Nuovo», nella scheda «Mazzi» c'è «Nuovo mazzo».</p>
+<h3>Internazionali e giapponesi</h3>
+<p>Le carte giapponesi stanno nelle loro espansioni, separate da quelle internazionali. Il selettore «Internazionali |
+Giapponesi» in Collezione e Mancanti sceglie quali vedere; la scelta è una sola e vale anche per l'inserimento a mano e
+l'aggiunta di più carte.</p>
+<p>L'aspetto chiaro o scuro segue quello del telefono.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="aggiungere">
+<h2>4. Aggiungere carte</h2>
+<h3>Con la fotocamera</h3>
+<ol>
+<li>Tocca «Aggiungi» → «Scansiona carta». La prima volta l'app chiede il permesso della fotocamera: tocca «Concedi».</li>
+<li>Riempi il riquadro con la carta e scatta. L'app legge la sigla dell'espansione in basso a sinistra, il numero e il
+nome.</li>
+<li>Prima arriva il controllo: l'app dice se ce l'hai già e quanto vale. Se volevi solo saperlo, ti puoi fermare
+qui.</li>
+<li>Per aggiungerla tocca «Aggiungi alla collezione» (o «Aggiungi un'altra copia» se ce l'hai già).</li>
+<li>Scegli «Versione», «Lingua», «Condizione» e «Quantità», poi tocca «Aggiungi».</li>
+</ol>
+<p>Se la carta riconosciuta è sbagliata tocca «Non è questa carta?» e cercala a mano. «Scansiona un'altra» passa alla carta
+successiva. Per i prodotti sigillati inquadra il codice a barre: la prima volta l'app propone il prodotto leggendo il
+testo della scatola, dalla volta dopo lo riconosce subito.</p>
+<h3>A mano</h3>
+<ol>
+<li>Tocca «Aggiungi» → «Inserisci a mano» e scegli «Carta» o «Prodotto sigillato».</li>
+<li>Scrivi il nome o la sigla dell'espansione. Puoi anche scrivere sigla e numero come sulla carta, per esempio «ASC 055»
+o «ASC 055/217»: la carta compare in cima all'elenco, toccala.</li>
+<li>Oppure apri l'espansione e cerca la carta con «Numero o nome».</li>
+<li>Scegli versione, lingua, condizione e quantità e tocca «Aggiungi».</li>
+</ol>
+<h3>Più carte insieme</h3>
+<ol>
+<li>Tocca «Aggiungi» → «Aggiungi più carte insieme» e scegli l'espansione. Ci arrivi anche dalla pagina di un'espansione
+nelle Mancanti («Aggiungi più carte insieme») o dall'inserimento a mano.</li>
+<li>Scegli «Lingua», «Condizione» e «Versione»: valgono per tutte le carte. Con «Tutte» ogni versione di ogni carta è una
+tessera a sé.</li>
+<li>Tocca le carte che hai in mano; − e + cambiano i pezzi. «Solo mancanti» e la ricerca per numero o nome aiutano a
+trovarle.</li>
+<li>Tocca «Aggiungi». Il riepilogo dice anche dove metterle negli album.</li>
+</ol>
+<h3>Dalle Mancanti</h3>
+<p>Ogni carta che ti manca ha il «+» per aggiungerla subito. Anche la pagina di una carta che non hai ha «Aggiungi alla
+collezione».</p>
+<h3>Lingua e condizione</h3>
+<p>Se l'app legge la lingua dalla carta, accanto a «Lingua» scrive «(letta dalla carta)»; altrimenti «(da verificare)». Le
+carte giapponesi si aggiungono sempre in giapponese. Se scegli una lingua in cui, secondo Limitless, la carta non è mai
+stata stampata, compare un avviso: l'aggiunta resta possibile. Le condizioni vanno da MT (Mint) a PO (Poor).</p>
+<h3>Carte «In attesa» delle espansioni appena uscite</h3>
+<p>Se una carta è di un'espansione appena uscita che l'app non ha ancora, o non ha tutta, lo scanner mostra la carta con il
+nome e l'immagine inglesi presi da Limitless e il pulsante «Metti in attesa». Nell'inserimento a mano, con
+«Internazionali», le stesse carte stanno nella sezione «Carte non ancora su TCGdex».</p>
+<ul>
+<li>La carta va nella lista «Carte in attesa» (dal menu ⋯ della Collezione, o dalla riga «In attesa: …» sotto il
+riepilogo).</li>
+<li>Passa in collezione da sola quando la carta arriva nell'app. La Collezione te lo dice con un avviso: «Vedi» mostra
+le carte passate, «OK» chiude l'avviso.</li>
+<li>Fino ad allora non ha prezzo e non conta in album, mazzi, Mancanti e valore. Negli scambi non si può aggiungere.</li>
+<li>Nella lista tocchi una carta per correggerla o eliminarla; «Aggiungi a mano» mette in attesa una carta scrivendo
+«Sigla» e numero.</li>
+</ul>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="collezione">
+<h2>5. La collezione</h2>
+<h3>Espansioni, lista e griglia</h3>
+<ul>
+<li>Le espansioni sono in ordine di uscita e partono chiuse: tocca un'espansione per aprirla. Accanto a «Espansioni»
+scegli «Più recenti» o «Più vecchie».</li>
+<li>Mentre scorri, l'intestazione dell'espansione aperta resta in alto: toccala per chiuderla. Quando la superi si chiude
+da sola. Nel menu ⋯ «Chiudi tutte» le chiude tutte.</li>
+<li>Nel menu ⋯ «Vista a lista» o «Vista a griglia» cambia la vista. Nella griglia ogni carta è una tessera con i pezzi e
+il numero della carta.</li>
+<li>In alto il riepilogo dice pezzi, espansioni e valore. «Dettagli» spiega come è calcolato e ha i pulsanti per
+aggiornare i prezzi.</li>
+</ul>
+<h3>Carte e prodotti</h3>
+<p>«Carte | Prodotti» passa ai prodotti sigillati, divisi per espansione come le carte; quelli senza espansione stanno in
+«Altri prodotti». Tocca un prodotto per vedere prezzo e andamento.</p>
+<h3>Master set</h3>
+<p>Aprendo un'espansione trovi «Master set». Acceso, la griglia mostra una tessera per ogni versione che hai (normale,
+reverse, holo, reverse con motivo…). La prima volta l'app scarica da TCGdex le versioni delle carte e mostra
+l'avanzamento.</p>
+<h3>La pagina della carta</h3>
+<p>Tocca una carta per aprire la sua pagina:</p>
+<ul>
+<li>l'immagine grande; sulle carte holo, reverse e ultra rare l'effetto olografico si muove inclinando il telefono (si spegne in Impostazioni → «Carte»);</li>
+<li>«Versioni»: tocca una versione per vederne il prezzo;</li>
+<li>il riquadro del prezzo: come è calcolato, quando è stato letto e l'andamento (toccalo per vederlo grande), anche nelle
+altre lingue che scegli nelle Impostazioni;</li>
+<li>le righe da aprire: le tue copie, «Dove si trova» (album, pagina e tasca, playset o box), «Ristampe» (le altre stampe
+della stessa carta, anche giapponesi) e «Dati della carta» (illustratore, Pokédex, testo della carta);</li>
+<li>in basso «Aggiungi una copia» (o «Aggiungi alla collezione») e «Cardmarket», che apre la pagina della carta su
+Cardmarket già filtrata per lingua e versione, dentro l'app; la chiudi con la ✕;</li>
+<li>nel menu ⋯ «Aggiorna il prezzo» e, sulle tue copie, «Modifica» e «Rimuovi».</li>
+</ul>
+<h3>Modificare e togliere una copia</h3>
+<ol>
+<li>Nella pagina della copia apri il menu ⋯ → «Modifica».</li>
+<li>Cambia «Versione», «Lingua», «Condizione» o «Quantità» e tocca «Salva». Se diventa uguale a un'altra riga della
+collezione, le quantità si sommano.</li>
+<li>Per toglierla: «Rimuovi», poi «Conferma rimozione».</li>
+</ol>
+<p>«Rimuovi» del menu ⋯ toglie, dopo la conferma, tutte le copie di quella riga (stessa versione, lingua e condizione). Per
+toglierne una sola abbassa la quantità con «Modifica».</p>
+<h3>Stampini</h3>
+<p>Nel foglio di aggiunta «+ Stampino» aggiunge una versione con lo stampino (Prerelease, Staff, Lega…). Per dargli prezzo
+e foto, nella pagina della carta scegli lo stampino in «Versioni», tocca «Cerca la pagina su Cardmarket», vai alla versione
+con lo stampino e tocca «Usa questa pagina per lo stampino» in basso. «Scollega» toglie il collegamento.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="mancanti">
+<h2>6. Le carte che mancano</h2>
+<h3>L'elenco</h3>
+<p>«Mancanti» elenca le espansioni con l'avanzamento e il costo delle carte che mancano. «Cerca espansione» filtra
+l'elenco, «Solo set iniziati» mostra solo le espansioni in cui hai almeno una carta.</p>
+<p>Tocca un'espansione per vedere le sue carte mancanti:</p>
+<ul>
+<li>il «+» su ogni carta la aggiunge;</li>
+<li>«Master set» mostra anche le versioni che mancano;</li>
+<li>«Per numero» o «Più care prima» cambiano l'ordine;</li>
+<li>«Dettagli» ha «Aggiorna prezzi delle mancanti» e «Aggiorna veloce le mancanti».</li>
+</ul>
+<h3>Quanto costa completarle</h3>
+<ol>
+<li>Spunta la casella delle espansioni che vuoi completare.</li>
+<li>In basso compare una barra con quante espansioni hai scelto, quante carte mancano e quanto costano «per
+completarle».</li>
+<li>Dalla barra: «Aggiorna prezzi» e «Veloce» aggiornano i prezzi di quelle carte, «Condividi» le manda come immagini,
+«Svuota» toglie la scelta.</li>
+</ol>
+<p>La scelta si toglie quando passi a un'altra scheda o alle Impostazioni, e a ogni avvio dell'app. I prezzi delle carte che non hai sono nella «Lingua principale» delle
+Impostazioni; le carte giapponesi hanno i prezzi in giapponese.</p>
+<h3>Condividere le mancanti come immagini</h3>
+<ol>
+<li>Con le espansioni spuntate tocca «Condividi»: si apre «Condividi le mancanti».</li>
+<li>Tocca le carte che non vuoi chiedere per toglierle; restano tolte anche la volta dopo. «Escludi tutte» e «Includi tutte»
+valgono per un'espansione.</li>
+<li>Tocca «Condividi N carte» in basso e scegli l'app (per esempio WhatsApp). Le immagini hanno 5 colonne e al
+massimo 4 righe, con foto, numero e nome di ogni carta.</li>
+</ol>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="prezzi">
+<h2>7. I prezzi</h2>
+<h3>Da dove vengono</h3>
+<p>L'unico riferimento è Cardmarket. Per ogni carta l'app apre la pagina Cardmarket, senza mostrartela, e legge le offerte
+nella lingua della carta. Le tue copie usano la loro lingua; le carte che non hai usano la «Lingua principale». Il price
+guide di Cardmarket, un file con un prezzo medio di tutte le lingue, non è mai il prezzo di una carta: serve solo per le
+stime e per capire quali carte si sono mosse.</p>
+<h3>Come si calcolano</h3>
+<p>In Impostazioni → «Prezzi»:</p>
+<ul>
+<li>«Media dei primi … venditori» oppure «Offerta più bassa»; il numero di venditori (da 3 a 25, 10 di partenza) si sceglie in «Venditori nella media»;</li>
+<li>«Condizione minima»: contano solo le offerte in quella condizione o migliore (Near Mint di partenza, oppure
+«Qualsiasi»);</li>
+<li>«Lingua principale» e «Altre lingue nella pagina della carta» (fino a 2).</li>
+</ul>
+<p>Media, offerta più bassa e numero di venditori valgono subito: le offerte lette restano salvate. Cambiando la «Condizione minima» o la «Lingua principale» servono letture nuove: finché non arrivano vedi la stima «≈» (o nessun prezzo), e cambiando la condizione con «Automatici» la collezione torna in coda.</p>
+<h3>Le stime «≈»</h3>
+<p>Una carta mai letta mostra una stima dal price guide, in grigio con «≈». Nel valore della collezione la parte stimata è
+indicata a parte. Si spegne con «Stima per i prezzi mai letti».</p>
+<h3>I tre modi di «Prezzi Cardmarket»</h3>
+<p>In cima a Impostazioni → «Prezzi» scegli come l'app usa Cardmarket. Vale subito, per questo telefono:</p>
+<ul>
+<li>«Automatici» (di partenza): i prezzi della collezione si aggiornano da soli, come scegli in «Aggiornamento
+automatico» (con un account, solo se il telefono ha acceso «Questo telefono legge i prezzi in automatico», vedi
+<a href="#account">Più telefoni con un account</a>).</li>
+<li>«Solo quando apro la carta»: l'app non legge niente da sola. Il prezzo si aggiorna quando apri la carta, la scansioni,
+tocchi «Aggiorna prezzi» o un aggiornamento veloce, o lavori in uno scambio.</li>
+<li>«Nessun prezzo»: l'app non legge Cardmarket e non mostra prezzi, stime né andamenti, solo le carte. Il pulsante
+«Cardmarket» della pagina della carta resta.</li>
+</ul>
+<p>I prezzi già letti restano salvati: tornando ad «Automatici» ci sono ancora.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="aggiornare-prezzi">
+<h2>8. Quando si aggiornano i prezzi</h2>
+<h3>Aggiornamento automatico</h3>
+<p>Con «Automatici», in Impostazioni → «Aggiornamento automatico»:</p>
+<ul>
+<li>«All'apertura dell'app»: aggiorna in sottofondo i prezzi della collezione da rileggere, con una barra in alto
+(«Prezzi Cardmarket · restano …», con «Pausa»);</li>
+<li>«Con l'app chiusa»: le letture continuano anche con l'app chiusa, sul Wi-Fi e con la batteria non scarica; «Anche con
+i dati mobili» le permette anche senza Wi-Fi;</li>
+<li>«Di notte»: verso le 2:30, con il telefono in carica e sul Wi-Fi.</li>
+</ul>
+<p>Quando partono le letture con l'app chiusa lo decide Android: a volte le rimanda anche di ore. Dopo un riavvio del
+telefono ripartono quando apri l'app.</p>
+<p>Per non sprecare pagine l'app non rilegge tutto: le carte mai lette, con la stima accesa (di partenza), si leggono quando le apri, le scansioni o tocchi
+«Aggiorna prezzi»; le carte sotto «Carte di poco valore» (0,50 € di partenza) si rileggono ogni 90 giorni, le altre ogni
+7, prima se il price guide dice che si sono mosse. La carta che apri si rilegge ogni volta che apri la sua pagina.</p>
+<h3>Il limite di pagine all'ora</h3>
+<p>Cardmarket blocca chi apre troppe pagine troppo in fretta. Per questo l'app legge a ritmo regolare e, di partenza, al
+massimo 40 pagine all'ora. In Impostazioni → «Aggiornamento automatico» → «Pagine Cardmarket all'ora» puoi salire fino a
+720: la collezione si aggiorna prima, ma Cardmarket blocca più spesso. La carta che apri passa sempre per prima. Se
+Cardmarket blocca, l'app aspetta e rallenta da sola.</p>
+<h3>Aggiornamento veloce</h3>
+<p>Serve ad aggiornare in fretta i prezzi mancanti o cambiati, per esempio di una collezione appena inserita. Lo trovi in
+«Dettagli» della Collezione («Aggiorna veloce la collezione», «Aggiorna veloce tutto»), nella pagina di un'espansione
+delle Mancanti («Aggiorna veloce le mancanti») e come «Veloce» nella barra delle Mancanti e negli scambi.</p>
+<ol>
+<li>Leggi l'avviso e tocca «Avvia».</li>
+<li>Tieni aperto il riquadro «Aggiornamento veloce»: l'app legge 5 pagine insieme, una al secondo ciascuna. Cardmarket
+chiederà spesso la verifica di sicurezza, che compare nel riquadro.</li>
+<li>Con «Chiudi», o uscendo dall'app, si torna al ritmo di sempre.</li>
+</ol>
+<h3>La verifica di sicurezza di Cardmarket</h3>
+<p>A volte Cardmarket chiede di dimostrare che sei una persona. La completi tu, dentro l'app: tocca «Verifica» nella barra
+in alto, o «Completa la verifica» nel riquadro del prezzo, e segui la pagina. Se succede con l'app chiusa arriva una
+notifica: aprendo l'app la verifica compare subito. L'app non aggira mai questa verifica.</p>
+<h3>Prezzi condivisi tra utenti (facoltativi)</h3>
+<p>Con un account (vedi <a href="#account">Più telefoni con un account</a>) puoi scambiare le letture dei prezzi con gli
+altri utenti: così ognuno apre meno pagine Cardmarket. Sono spenti finché non dici di sì: l'app lo chiede una volta
+(«Salva» o «Decido dopo»), poi la scelta sta in Impostazioni → «Prezzi condivisi», con due interruttori:</p>
+<ul>
+<li>«Usa i prezzi letti dagli altri»: per una carta da rileggere l'app usa una lettura recente di un altro utente, fatta
+con le tue stesse impostazioni;</li>
+<li>«Condividi i prezzi che leggo»: le tue letture vanno agli altri. Viaggiano il prodotto, la lingua, la versione, la condizione minima, le offerte lette, l'ora e il nome della pagina
+Cardmarket letta (per esempio «DLR021»), non la tua collezione. Gli altri utenti non vedono chi l'ha letta; il server sa da
+quale account arriva, solo per poter togliere i dati falsi.</li>
+</ul>
+<p>La carta che apri si legge sempre da Cardmarket.</p>
+<p class="note">Come dice anche l'app, la lettura automatica delle pagine è contro i termini d'uso di Cardmarket.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="album">
+<h2>9. Album, playset e box</h2>
+<h3>Creare un album</h3>
+<ol>
+<li>Scheda «Album» → «Nuovo» → «Nuovo album».</li>
+<li>Scrivi «Nome», scegli «Colore» e la «Pagina» («Righe» × «Colonne», da 1 a 6).</li>
+<li>In «Capacità» scegli «Pagine fisse», con quante «Pagine», oppure «Ad anelli».</li>
+<li>In «Ogni set parte» scegli «Su una pagina nuova» o «Sulla prima facciata libera», poi la «Lingua delle carte nelle
+tasche».</li>
+<li>Tocca «Crea album», poi aggiungi i set.</li>
+</ol>
+<h3>Pagine fronte e retro</h3>
+<p>Una pagina è un foglio con due facciate: in un 3×3 ci sono 9 tasche davanti e 9 dietro, 18 carte in tutto. Le posizioni
+si leggono come «pagina 3 fronte».</p>
+<h3>Set e partenze</h3>
+<ul>
+<li>Nella modifica dell'album tocca «Aggiungi set». L'app propone la pagina da cui parte («Inizia a pagina …?»): confermi
+con «Conferma» o cambi pagina, «Fronte» o «Retro».</li>
+<li>Se il set prima arriva fino a quella pagina, l'app chiede se spostarlo («Lo sposto a …?»): non lo fa mai da sola.
+«Cambia pagina» sceglie un'altra partenza.</li>
+<li>Per ogni set: «Posto fisso» (una tasca per carta, quelle che mancano restano vuote) o «Compatto» (solo le carte che
+hai); «Master set» (una tasca per versione); «Stampini» (in fondo al set).</li>
+<li>«Aggiungi collezione speciale» mette in album una collezione speciale; «Aggiungi spazio libero» lascia tasche per altro.
+Le frecce cambiano l'ordine dei blocchi.</li>
+</ul>
+<h3>Sfogliare l'album</h3>
+<p>Tocca la copertina. In verticale vedi una pagina, in orizzontale la doppia pagina aperta a tutto schermo. Sfoglia con il
+dito o con le frecce; in verticale lo slider porta subito a una pagina. Le carte che mancano sono in grigio e trasparenti
+nella loro tasca. Tocca una tasca per aprire la carta. La matita in alto apre la modifica.</p>
+<h3>Playset e box</h3>
+<ul>
+<li>«Nuovo playset»: le copie in più delle carte, fino a 4 per tasca, per i set che scegli.</li>
+<li>«Nuovo box»: scrivi il nome e tocca «Crea box», poi «Aggiungi set o filtro» → «Un set» o «Un filtro» (per esempio i
+Pikachu di un'espansione senza gli ex). «Escludi dal playset» tiene quelle carte fuori dal playset. «Nel box» mostra le
+carte che ci stanno.</li>
+<li>Un set può stare in un album, in un playset e in un box: nell'album la prima copia, nel playset fino a 4 copie in
+più, nel box le altre.</li>
+</ul>
+<h3>Dove si trova una carta</h3>
+<p>Nella pagina della carta, «Dove si trova» dice album, pagina e tasca, o il playset, o il box. Il tocco apre l'album su
+quella pagina.</p>
+<p>Se hai album, playset o box, dopo che aggiungi una carta in alto compare per 10 secondi un avviso «Dove metterla: …». Nei set compatti dice prima di
+quale carta inserirla; negli album ad anelli dice quando serve una pagina in più. La ✕ lo chiude.</p>
+<h3>Priorità delle copie</h3>
+<p>Una carta può avere una tasca nel suo set e una in una collezione speciale. Nella scheda «Album», menu ⋯ → «Priorità
+delle copie», scegli chi prende la prima copia: le collezioni sopra «Album dei set» la prendono prima dei set, quelle
+sotto dopo.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="collezioni-speciali">
+<h2>10. Collezioni speciali</h2>
+<p>Sono collezioni che attraversano le espansioni: tutte le carte di un Pokémon, di un illustratore, di una rarità, di un
+tipo, oppure di un tuo gruppo di Pokémon (per esempio i cani).</p>
+<h3>Crearne una</h3>
+<ol>
+<li>Tocca «Aggiungi» → «Nuova collezione speciale» e scrivi il «Nome».</li>
+<li>In «Edizione» scegli «Internazionali», «Giapponesi» o «Tutte».</li>
+<li>In «Criteri» scegli il tipo: «Pokémon», «Linea evolutiva», «Illustratore», «Rarità», «Tipo», «Categoria»,
+«Tipologia» o «Espansione», e cerca i valori. Più valori dello stesso criterio valgono in alternativa.</li>
+<li>«Aggiungi criterio» ne aggiunge un altro (fino a 8): entrano solo le carte che li rispettano tutti insieme.</li>
+<li>In «Ordine delle carte» scegli «Per uscita» o «Per Pokémon», e «Crescente» o «Decrescente».</li>
+<li>L'anteprima dice quante carte sono e quante ne hai. Tocca «Crea collezione».</li>
+</ol>
+<p>Per il criterio «Tipologia» crei il tuo gruppo con «Nuova tipologia».</p>
+<h3>Dove si vedono</h3>
+<p>In cima a Collezione e Mancanti, nella sezione «Collezioni speciali», che parte chiusa. Una collezione compare con la sua
+edizione; quelle «Tutte» con tutte e due. La pagina della collezione ha «Mancanti», «Possedute» e «Tutte», il «+» per
+aggiungere le mancanti e il costo per completarla. La matita in alto la modifica.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="mazzi">
+<h2>11. Mazzi</h2>
+<h3>Creare un mazzo</h3>
+<ol>
+<li>Su Limitless o su Pokémon TCG Live copia la lista del mazzo come testo.</li>
+<li>Scheda «Mazzi» → «Nuovo mazzo» e incolla la lista in «Incolla la lista». Scrivi il «Nome».</li>
+<li>Scegli il «Formato»: «Standard», «Expanded» o «GLC» (per il GLC anche il «Tipo del mazzo», che l'app propone dalla
+lista).</li>
+<li>Scegli la «Lingua del mazzo»: contano solo le copie in quella lingua.</li>
+<li>Tocca «Crea».</li>
+</ol>
+<p>Prima di creare il mazzo l'app controlla le regole del formato: 60 carte, copie per nome, carte legali, carte bandite e le
+altre regole. Se qualcosa non va, il mazzo non si crea e l'app elenca i problemi. In Standard ed Expanded la legalità
+delle carte viene dai dati di Limitless. Il formato si cambia dal menu ⋯ con «Cambia formato». Un mazzo Standard che dopo
+una rotazione non è più valido passa da solo a Expanded, se lì è valido, e l'elenco lo dice.</p>
+<h3>Le copie dalla collezione</h3>
+<ul>
+<li>Le copie si prendono prima dai box e dai playset. Con l'interruttore «Usa quella in collezione» su una riga, anche
+dagli album.</li>
+<li>«Completa» assegna le copie libere; un foglio dice da dove prenderle.</li>
+<li>Una copia assegnata a un mazzo non conta più per album, playset e box: la sua tasca dice «nel mazzo …».</li>
+<li>Ogni riga mostra le stampe della carta (la stessa carta in espansioni diverse), con quante ne hai: con − e + scegli
+tu quali usare.</li>
+</ul>
+<h3>Priorità tra mazzi</h3>
+<p>Nella scheda «Mazzi» l'ordine è la priorità: lo cambi con le frecce. Se le copie non bastano per tutti, le prende prima il
+mazzo più in alto. Se una carta che ti manca sta in un mazzo più in basso, la riga propone «Prendila».</p>
+<h3>Condividere e giocare</h3>
+<ul>
+<li>Menu ⋯ → «Condividi le mancanti»: immagini come quelle delle Mancanti, divise in Pokémon, Allenatori ed Energie. Le
+carte che mancano a un mazzo sono solo un elenco, senza prezzi.</li>
+<li>Menu ⋯ → «Lista per il torneo»: scrivi «Nome e cognome», «Player ID» e «Data di nascita» (l'app li ricorda e calcola
+la categoria). «Nomi in inglese» (per i mazzi in italiano o giapponese) usa i nomi inglesi. «Copia la lista» la copia nel formato di TCG Live; «Condividi» la
+manda con i tuoi dati.</li>
+<li>Nel menu ⋯ ci sono anche «Rinomina», «Reimporta» (per incollare una lista nuova) ed «Elimina».</li>
+</ul>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="scambi">
+<h2>12. Scambi</h2>
+<h3>Fare uno scambio</h3>
+<ol>
+<li>In «Collezione» tocca l'icona degli scambi (le due frecce) accanto al titolo: si apre «Scambi». Tocca «Nuovo
+scambio».</li>
+<li>In «Do» tocca «Aggiungi dalle mie» e scegli le copie che dai, con − e + per i pezzi.</li>
+<li>In «Ricevo» aggiungi le carte che ricevi con «Scanner» o «Cerca», e i prodotti con «Sigillato». Restano nella bozza
+finché non confermi.</li>
+<li>Se vuoi, scrivi «Con chi», «Note» e il «Conguaglio» in euro, dato o ricevuto.</li>
+<li>Il «Riepilogo» mostra «Totale dato», «Totale ricevuto» e la «Differenza». I prezzi sono le offerte Cardmarket lette
+nelle ultime 20 ore; «Aggiorna prezzi» e «Veloce» rileggono quelle più vecchie.</li>
+<li>Tocca «Conferma scambio». La finestra dice cosa prendere dagli album, dai playset e dai box, cosa mettere e cosa
+spostare. Tocca «Conferma»: le carte date escono dalla collezione, le ricevute entrano.</li>
+</ol>
+<h3>Annullare e storico</h3>
+<p>Uno scambio fatto si annulla aprendolo e toccando «Annulla scambio»: le carte date tornano e le ricevute escono. Una
+bozza si elimina con «Elimina bozza». Gli scambi restano nell'elenco «Scambi». Per fare spazio: Impostazioni → «Storico
+scambi» → «Cancella gli scambi più vecchi di» (da «1 mese» a «Tutti») → «Cancella», con la conferma. Le bozze lì non si
+toccano.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="account">
+<h2>13. Più telefoni con un account (facoltativo)</h2>
+<p>Senza account l'app funziona come sempre. Con un account i tuoi telefoni hanno la stessa collezione. Tutto parte da
+Impostazioni → «Account e dispositivi».</p>
+<h3>Creare l'account</h3>
+<ol>
+<li>Tocca «Crea un account». Prima l'app ti mostra «Cosa va sul server»: leggilo e tocca «Continua».</li>
+<li>Scegli nome utente e password. L'email è facoltativa: se la scrivi ti arriva un codice (guarda anche
+nello spam) da scrivere nella parte «Email» della pagina, poi «Conferma». Solo con l'email confermata puoi recuperare la
+password con un codice.</li>
+<li>Tocca «Crea».</li>
+</ol>
+<h3>Collegare un altro telefono</h3>
+<ol>
+<li>Sul telefono già collegato tocca «Aggiungi un dispositivo»: compaiono un codice di 8 caratteri e un QR, validi per
+pochi minuti.</li>
+<li>Sull'altro telefono, in «Account e dispositivi», tocca «Collega con un codice» e scrivi il codice, oppure tocca lì
+«Inquadra il QR».</li>
+</ol>
+<p>Puoi anche entrare con «Accedi», nome utente e password («Password dimenticata» se non la ricordi). Puoi collegare fino a 5
+dispositivi; «Togli» ne scollega uno.</p>
+<h3>Cosa si tiene uguale</h3>
+<p>Copie, sigillati, album, mazzi, scambi, carte in attesa, collezioni speciali, i prezzi letti e alcune preferenze (master
+set, carte escluse dalla condivisione). Una modifica arriva sugli altri telefoni entro una quindicina di secondi con l'app aperta, di solito entro
+un quarto d'ora con l'app chiusa (quando parte lo decide Android). Senza rete ogni telefono lavora da solo e invia dopo. Le impostazioni restano di ogni
+telefono. «Sincronizza ora» invia e riceve subito.</p>
+<p>Se entri in un account che ha già una collezione con un telefono che ne ha una sua, l'app non mescola le due: puoi solo sostituire i
+dati del telefono con quelli dell'account («Sostituisci», con un backup completo prima) o uscire («Annulla ed esci»).</p>
+<h3>I telefoni che leggono i prezzi</h3>
+<p>In «Telefoni che leggono i prezzi» l'interruttore «Questo telefono legge i prezzi in automatico» dice quali telefoni
+aggiornano i prezzi da soli: se sono più d'uno si dividono le carte. Le letture che chiedi tu, come aprire una carta,
+funzionano su tutti. Le carte in attesa passano in collezione sul primo telefono che legge i prezzi (con un solo telefono nell'account passano
+comunque). Passando a «Solo quando apro la carta» o «Nessun prezzo» l'interruttore si spegne, e tornando ad «Automatici»
+resta spento finché non lo riaccendi tu.</p>
+<h3>Cosa va sul server</h3>
+<p>Sul server gestito dallo sviluppatore vanno il nome utente, l'email se la scrivi, il nome dei dispositivi, le righe della
+collezione, i prezzi letti e alcune preferenze, non le immagini; per poco tempo anche l'indirizzo IP e la data dell'ultimo contatto e, se accendi i prezzi condivisi, le letture che condividi. La password non lascia mai il telefono. I dettagli sono
+nella schermata «Cosa va sul server» e nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
+<p>«Esci da questo dispositivo» scollega questo telefono, «Esci da tutti gli altri dispositivi» scollega gli altri. «Cancella
+l'account» toglie dal server l'account e i suoi dati; i dati sul telefono restano.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="backup">
+<h2>14. Backup e cambio di telefono</h2>
+<p>Tutto sta in Impostazioni → «Backup». Fai un backup ogni tanto e tienilo fuori dal telefono: se cambi telefono o
+disinstalli l'app, senza account è il modo sicuro per recuperare la collezione.</p>
+<h3>A mano</h3>
+<ul>
+<li>«Esporta backup» salva in un file collezione, carte in attesa, album, mazzi, scambi, prezzi letti e impostazioni.</li>
+<li>«Importa backup» controlla il file, chiede conferma e si applica al riavvio dell'app. Prima tiene una copia dei dati
+di adesso: «Ripristina i dati di prima» la rimette.</li>
+<li>«Foto scaricate da Cardmarket» mette nel backup le foto scaricate dalle pagine Cardmarket; «Tutte le immagini», solo nel
+backup a mano, anche tutte le altre (il file diventa grande).</li>
+</ul>
+<p>Importare un backup su un telefono collegato a un account lo scollega dall'account, così i dati del backup non vanno
+sugli altri telefoni.</p>
+<h3>Backup automatico</h3>
+<ol>
+<li>Accendi «Backup automatico» e scegli la cartella in cui salvarlo (dopo la cambi con «Scegli cartella»).</li>
+<li>Scegli «Ogni giorno», «Ogni settimana» o «Ogni mese» e «Quanti tenerne» (da 1 a 5).</li>
+<li>«Fai un backup ora» ne fa uno subito.</li>
+</ol>
+<p>Quando parte lo decide Android. Se non riesce arriva una notifica.</p>
+<h3>Google Drive (facoltativo)</h3>
+<ol>
+<li>Accendi «Salva i backup sul tuo Google Drive», tocca «Sì, usa Drive» e dai il permesso nella schermata di Google.</li>
+<li>L'app crea nel tuo Drive una cartella «Cardoteca» e vede solo i file che crea lei.</li>
+</ol>
+<p>Accendendolo fa subito il primo backup. Poi usa la stessa frequenza e lo stesso «Quanti tenerne» del backup automatico:
+circa ogni 12 ore, solo con il Wi-Fi e la batteria non quasi scarica, l'app controlla se è passato il tempo scelto e, se sì,
+carica un backup nuovo (quando parte lo decide Android). «Fai un backup su Drive ora» e «Ripristina da Drive» funzionano
+anche con i dati mobili, dopo una conferma con il peso del file; «Spegni Drive» lo spegne e lascia i file sul Drive. Due
+telefoni con lo stesso account Google sulla stessa cartella si cancellano a vicenda i backup oltre il numero da tenere.</p>
+<h3>Cambio di telefono</h3>
+<p>Installa Cardoteca sul telefono nuovo. Nella schermata di benvenuto scegli «Importa un backup», «Ripristina da Google
+Drive» o «Entra con un account».</p>
+<h3>Da PokéCollezione</h3>
+<ol>
+<li>Installa Cardoteca.</li>
+<li>Dalle <a href="https://github.com/Pizz089/Cardoteca/releases">versioni di Cardoteca</a> installa anche «PokéCollezione:
+ultimo aggiornamento».</li>
+<li>In PokéCollezione tocca «Trasferisci a Cardoteca» (ci arrivi anche da «Trasferisci da PokéCollezione» nel benvenuto
+di Cardoteca) e conferma in Cardoteca.</li>
+</ol>
+<p>Collezione, album, prezzi letti e impostazioni passano nella nuova app. Dopo il passaggio puoi disinstallare
+PokéCollezione.</p>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="impostazioni">
+<h2>15. Impostazioni</h2>
+<p>Si aprono dal menu ⋯ di ogni scheda. Ogni riga mostra il valore di adesso e apre la sua pagina; le spiegazioni lunghe
+stanno dietro la (i).</p>
+<ul>
+<li>«Prezzi»: il modo «Prezzi Cardmarket», come si calcola il prezzo, condizione minima, lingue, carte di poco valore,
+price guide e stime.</li>
+<li>«Aggiornamento automatico»: quando l'app aggiorna i prezzi da sola e quante pagine Cardmarket all'ora.</li>
+<li>«Carte»: «Effetto olografico», acceso o spento.</li>
+<li>«Backup»: backup a mano, automatico e su Google Drive.</li>
+<li>«Account e dispositivi»: l'account facoltativo, i telefoni collegati e la sincronizzazione.</li>
+<li>«Prezzi condivisi»: i due interruttori per usare e condividere le letture dei prezzi.</li>
+<li>«Aggiornamenti dell'app»: versione installata, canale e «Controlla ora».</li>
+<li>«Diagnostica»: immagini e loghi, pagine Cardmarket, blocchi e ultimo errore, utile per segnalare un problema.</li>
+<li>«Storico scambi»: cancella gli scambi vecchi.</li>
+</ul>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<section id="domande">
+<h2>16. Domande frequenti e problemi</h2>
+<details>
+<summary>Il prezzo non si aggiorna o resta fermo</summary>
+<ul>
+<li>Guarda il modo in Impostazioni → «Prezzi»: con «Solo quando apro la carta» l'app non legge niente da sola, con
+«Nessun prezzo» non legge niente.</li>
+<li>Guarda la barra in alto. «A rate: …» vuol dire che sono finite le pagine dell'ora: riprende da sola all'ora scritta.
+«Cardmarket ha chiesto di rallentare: …» è un blocco di Cardmarket: l'app aspetta e riprende. «In pausa»: tocca
+«Riprendi».</li>
+<li>Con un account guarda Impostazioni → «Account e dispositivi» → «Telefoni che leggono i prezzi»: se «Questo telefono legge i prezzi in automatico» è spento, il telefono non legge niente da solo.</li>
+<li>Con la stima accesa le carte mai lette non si leggono da sole: apri la carta o tocca «Aggiorna prezzi».</li>
+<li>Con l'app chiusa è Android a decidere quando leggere: aprire l'app fa ripartire le letture.</li>
+<li>«Nessuna offerta in … su Cardmarket»: in quella lingua, con la tua «Condizione minima», oggi non ci sono offerte.</li>
+</ul>
+</details>
+<details>
+<summary>Cardmarket chiede una verifica</summary>
+<p>È la verifica di sicurezza di Cardmarket. Tocca «Verifica» nella barra in alto, o «Completa la verifica» nel riquadro
+del prezzo, e completala nella pagina che si apre. Con l'aggiornamento veloce compare da sola nel suo riquadro. Se arriva
+una notifica con l'app chiusa, apri l'app.</p>
+</details>
+<details>
+<summary>Lo scanner non riconosce la carta</summary>
+<ul>
+<li>Riempi il riquadro con la carta, con buona luce e senza riflessi sulla sigla in basso a sinistra.</li>
+<li>Se ha riconosciuto un'altra carta: «Non è questa carta?».</li>
+<li>Puoi sempre usare «Inserisci a mano» con sigla e numero, per esempio «ASC 055».</li>
+<li>Se la fotocamera si è messa in pausa per risparmiare batteria, tocca lo schermo per riprendere.</li>
+</ul>
+</details>
+<details>
+<summary>Un'espansione appena uscita non c'è ancora</summary>
+<p>Le espansioni nuove arrivano con gli aggiornamenti dell'app: il canale «Anteprima» le riceve prima, il canale «Stabile»
+con la versione stabile successiva. Nel frattempo, se lo scanner o l'inserimento a mano propongono «Metti in attesa», la
+carta va nelle «Carte in attesa» e passa in collezione da sola quando la carta arriva nell'app. Puoi anche metterla in attesa
+dalla lista con «Aggiungi a mano».</p>
+</details>
+<details>
+<summary>Manca la foto di una carta</summary>
+<p>Nella pagina della carta compare un riquadro «Manca la foto…». Tocca «Scarica la foto da Cardmarket»: si apre la sua
+pagina Cardmarket, la foto si scarica da sola e resta salvata. Può arrivare anche da sola alla lettura del prezzo
+successiva.</p>
+</details>
+<details>
+<summary>Dove vedo gli errori</summary>
+<p>In Impostazioni → «Diagnostica». La riga «Ultimo errore in background» ha «Copia», per incollarlo in una segnalazione, e
+«Azzera».</p>
+</details>
+<details>
+<summary>Come segnalo un problema</summary>
+<p>Apri una segnalazione su <a href="https://github.com/Pizz089/Cardoteca/issues">github.com/Pizz089/Cardoteca/issues</a>.
+Scrivi la versione (Impostazioni → «Aggiornamenti dell'app»), cosa stavi facendo, cosa ti aspettavi e cosa è successo, e
+incolla l'errore copiato dalla Diagnostica, se c'è.</p>
+</details>
+<p class="back"><a href="#indice">Torna all'indice</a></p>
+</section>
+
+<nav aria-label="Altre pagine">
+<a href="index.html">Torna a Cardoteca</a>
+<a href="privacy.html">Informativa sulla privacy</a>
+</nav>
+<footer>Cardoteca non è affiliata, approvata né sponsorizzata da The Pokémon Company, Nintendo, Creatures, GAME FREAK o
+Cardmarket. Pokémon e i nomi delle carte sono marchi dei rispettivi proprietari.</footer>
+</main>
+</body>
+</html>

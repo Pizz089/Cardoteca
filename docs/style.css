@@ -10,3 +10,15 @@ p, li { color: var(--fg); }
 a { color: var(--accent); }
 nav { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0 24px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+/* Guida all'utilizzo (guida.html): indice, sottotitoli, nota, domande frequenti */
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+section { scroll-margin-top: 16px; }
+.toc { margin: 16px 0 24px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 8px; }
+.toc h2 { font-size: 1rem; margin: 0 0 4px; }
+.toc ol { margin: 0; padding-left: 1.4em; }
+.note { margin: 16px 0; padding: 8px 14px; border-left: 3px solid var(--accent); color: var(--fg); }
+.back { font-size: 0.9rem; margin-top: 8px; }
+details { margin: 8px 0; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; }
+summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: 6px; }
+code { font-size: 0.95em; }

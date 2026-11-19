@@ -10,23 +10,104 @@
 <body>
 <main>
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Cardoteca · ultimo aggiornamento: 16 novembre 2026</p>
+<p class="muted">Cardoteca · ultimo aggiornamento: 19 novembre 2026</p>
 <p>Cardoteca è un'app Android gratuita per la propria collezione di carte Pokémon, sviluppata come progetto personale
 (<a href="https://github.com/Pizz089">Pizz089</a>), senza pubblicità e senza scopo di lucro. Questa pagina spiega quali
 dati usa e dove finiscono.</p>
 
 <h2>Dati sul telefono</h2>
-<p>Collezione, album, mazzi, scambi, prezzi letti e impostazioni stanno nella memoria dell'app sul tuo telefono. Lo
-sviluppatore non li riceve.</p>
+<p>Collezione, album, mazzi, scambi, prezzi letti e impostazioni stanno nella memoria dell'app sul tuo telefono. Senza
+un account lo sviluppatore non li riceve: l'app funziona così com'è, e l'account è facoltativo (vedi sotto).</p>
 
 <h2>Connessioni dell'app</h2>
 <p>Per mostrare dati delle carte, immagini e prezzi l'app scarica pagine e file pubblici da servizi esterni, tra cui
 Cardmarket, TCGdex, Limitless e GitHub (per gli aggiornamenti dell'app). Queste richieste non contengono la tua
-collezione né dati personali; come per ogni sito, quei servizi vedono l'indirizzo di rete del telefono.</p>
+collezione né dati personali; come per ogni sito, quei servizi vedono l'indirizzo di rete del telefono. Il server di
+Cardoteca, che si usa solo con un account, è descritto qui sotto.</p>
+
+<h2>Account (facoltativo)</h2>
+<p>Puoi creare un account Cardoteca per tenere la collezione uguale su più telefoni. Prima di creare l'account, di
+accedere o di collegare un telefono, l'app mostra una schermata «Cosa va sul server» che riassume queste informazioni. Senza account il server non riceve niente di te.</p>
+<p>Con un account, sul server vanno:</p>
+<ul>
+<li>il nome utente;</li>
+<li>l'email, solo se la scrivi;</li>
+<li>il nome dei dispositivi collegati (al massimo 5), con la data in cui sono stati collegati e quella dell'ultimo
+contatto di ognuno.</li>
+</ul>
+<p>Il server tiene per poco tempo anche il tuo indirizzo IP, solo per limitare i tentativi ripetuti (per esempio di
+accesso o di recupero della password) e il numero di richieste. Non è collegato al tuo account e per le reti IPv6 si
+tiene solo la parte iniziale dell'indirizzo. Viene cancellato dalla pulizia giornaliera del server, al massimo un paio
+di giorni dopo; in tutte le altre richieste l'indirizzo serve solo a controllare che non sia bloccato e non si salva.</p>
+<p>La password non lascia mai il telefono: al server arriva solo un valore calcolato da essa, e non si salva sul
+telefono. Sul server resta una versione ancora trasformata di quel valore, non la password.</p>
+<p>L'email serve solo a mandarti i codici di conferma dell'indirizzo e di recupero della password (valgono 15 minuti e
+sul server restano solo in forma non leggibile). Il recupero per email funziona solo con un indirizzo confermato; senza
+email la password si recupera da un altro dispositivo già collegato. Le email partono dalla casella di posta Gmail dello
+sviluppatore, quindi passano anche da Gmail.</p>
+<p>Se crei un account ma non ci sincronizzi nulla e per 30 giorni nessun dispositivo si fa vivo, il server lo cancella da
+solo, con tutto quello che ha (se apri l'app, il telefono collegato si fa sentire da solo almeno una volta ogni 7 giorni). Un account
+che ha già sincronizzato la collezione non viene cancellato in automatico: lo cancelli tu (vedi «Come cancellare i
+dati»).</p>
+
+<h2>Collezione su più telefoni</h2>
+<p>Con un account collegato la collezione si sincronizza tra i telefoni dell'account. Sul server vanno le righe della
+collezione (copie, album, mazzi, scambi, carte in attesa, collezioni speciali e il resto, comprese le note che scrivi),
+i prezzi letti con il loro storico e alcune preferenze. Non ci vanno le immagini né il price guide di Cardmarket.
+Impostazioni, coda e backup restano di ogni telefono.</p>
+<p>Se cancelli una riga sul telefono, sul server ne resta una traccia con i suoi ultimi dati (serve a far tornare la riga
+se un altro telefono la modifica) finché non cancelli l'account.</p>
+<p>Per dividere le letture automatiche dei prezzi tra i tuoi telefoni, il server tiene per mezz'ora quali pagine
+Cardmarket ha prenotato ogni telefono, e un eventuale blocco di Cardmarket segnalato da un telefono, che vale al massimo 2 ore.</p>
+<p>Il server è nell'account Cloudflare dello sviluppatore, che tecnicamente può vedere i dati che ci sono sopra.</p>
+
+<h2>Prezzi condivisi (facoltativi)</h2>
+<p>Sono spenti di partenza e servono solo con un account. Se li accendi, l'app può usare le letture dei prezzi fatte
+dagli altri utenti e dare le tue agli altri, così ogni telefono apre meno pagine Cardmarket. Le due cose sono
+indipendenti e valgono per il telefono su cui le accendi.</p>
+<ul>
+<li>Cosa viaggia, quando condividi: il prodotto Cardmarket, la lingua, la versione, la condizione minima, le offerte
+lette (fino a 25) oppure «nessuna offerta», l'ora della lettura e il nome della pagina Cardmarket letta (per esempio
+«DLR021»). La tua collezione non viaggia.</li>
+<li>Quando usi le letture degli altri, l'app chiede al server se per le carte da aggiornare c'è una lettura recente
+(manda i prodotti Cardmarket con lingua, versione e condizione minima, che il server non salva).</li>
+<li>Gli altri utenti non vedono né il tuo nome né la tua collezione. Il server sa da quale account arriva ogni lettura,
+solo per poter togliere i dati falsi e per chiedere la conferma di un altro account quando una lettura è molto diversa
+da quella già presente.</li>
+<li>Le letture restano sul server per 7 giorni dall'ora della lettura, poi si cancellano.</li>
+<li>Per spegnerle: Impostazioni → Prezzi condivisi, quando vuoi. Spegnendo l'interruttore le letture in attesa di
+partire si cancellano.</li>
+</ul>
+
+<h2>Dove sono i dati</h2>
+<p>Il server di Cardoteca è un servizio di Cloudflare (Workers, con database D1) nell'account Cloudflare dello
+sviluppatore. Cloudflare tratta i dati come fornitore del servizio, secondo i suoi
+<a href="https://www.cloudflare.com/terms/">termini</a> e la sua
+<a href="https://www.cloudflare.com/privacypolicy/">informativa sulla privacy</a>; come per ogni servizio su internet,
+vede le richieste di rete, indirizzo IP compreso. Le email passano da Gmail (vedi sopra). I dati non sono venduti né
+ceduti a nessun altro.</p>
+
+<h2>Come cancellare i dati</h2>
+<ul>
+<li><strong>Account e tutti i suoi dati sul server</strong> (nome utente, email, dispositivi, righe della collezione e
+tracce delle righe cancellate, prezzi, prenotazioni, letture condivise): Impostazioni → Account e dispositivi →
+«Cancella l'account», con la password. I dati sul telefono restano.</li>
+<li><strong>Un dispositivo</strong>: «Togli» accanto al dispositivo, «Esci da tutti gli altri dispositivi» o «Esci da
+questo dispositivo». Il dispositivo si scollega e i suoi dati restano sul telefono; la collezione resta sul server finché
+non cancelli l'account.</li>
+<li><strong>L'email</strong>: «Togli» nella scheda Email dell'account.</li>
+<li><strong>Le letture condivise</strong>: spegni l'interruttore (non ne partono altre); quelle già sul server spariscono
+da sole dopo 7 giorni, o subito se cancelli l'account.</li>
+</ul>
+<p>Non riesci ad accedere all'app o vuoi chiedere la cancellazione senza accedere? Scrivi dalla pagina dei contatti
+qui sotto.</p>
 
 <h2>Backup</h2>
 <p>Puoi esportare un backup in un file o salvarlo in automatico in una cartella che scegli tu. Il file resta dove lo
 metti.</p>
+<p>Se sul telefono è attivo il backup automatico di Android sul tuo account Google, può includere il database e le
+impostazioni dell'app, secondo i termini di Google; non include il collegamento all'account Cardoteca di quel telefono.
+Lo sviluppatore non riceve questi backup.</p>
 
 <h2>Google Drive (facoltativo)</h2>
 <p>Solo se lo attivi nelle Impostazioni, l'app salva i backup nel tuo Google Drive. Chiede il permesso
@@ -40,12 +121,16 @@ Google</a>, compresi i requisiti di utilizzo limitato.</p>
 Sicurezza → App e servizi di terze parti. Per cancellare i backup, elimina la cartella «Cardoteca» dal tuo Drive.</p>
 
 <h2>Niente pubblicità né tracciamento</h2>
-<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento. Gli errori restano in Impostazioni →
-Diagnostica sul telefono, e partono solo se decidi tu di condividerli.</p>
+<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento aggiunti dallo sviluppatore. Gli errori restano in
+Impostazioni → Diagnostica sul telefono, e partono solo se decidi tu di condividerli.</p>
+<p>Per riconoscere le carte e i codici QR con la fotocamera l'app usa le librerie ML Kit di Google, che lavorano sul
+telefono: le immagini non vengono inviate. Secondo la documentazione di Google, ML Kit può però mandare a Google dati
+tecnici anonimi d'uso (per esempio modello e versione del telefono, nome e versione dell'app, tempi di
+funzionamento), mai il contenuto delle immagini. Questo invio fa parte della libreria e l'app non lo controlla.</p>
 
-<h2>Funzioni future</h2>
-<p>Se in futuro l'app offrirà un account o la sincronizzazione tra più telefoni, questa pagina sarà aggiornata prima
-che diventino disponibili, e l'app chiederà il consenso prima di inviare qualsiasi dato.</p>
+<h2>Modifiche a questa pagina</h2>
+<p>Se una funzione nuova manderà altri dati al server, questa pagina sarà aggiornata prima che la funzione sia
+disponibile, e l'app chiederà il consenso prima di inviarli.</p>
 
 <h2>Contatti</h2>
 <p>Per domande o richieste apri una segnalazione su
