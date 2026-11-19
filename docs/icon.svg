@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 68 68">
+<!-- Icona di Cardoteca: due carte e la cornice di scansione (da app/src/main/res/drawable/ic_launcher_foreground.xml). -->
+<rect x="20" y="20" width="68" height="68" rx="15" fill="#1F2452"/>
+<g transform="rotate(-12 50 56)">
+<path fill="#6C7BD4" d="M38.5,35 H61.5 A3.5,3.5 0 0 1 65,38.5 V73.5 A3.5,3.5 0 0 1 61.5,77 H38.5 A3.5,3.5 0 0 1 35,73.5 V38.5 A3.5,3.5 0 0 1 38.5,35 Z"/>
+<path fill="#8E9CE6" d="M39.5,38 H60.5 A1.5,1.5 0 0 1 62,39.5 V54.5 A1.5,1.5 0 0 1 60.5,56 H39.5 A1.5,1.5 0 0 1 38,54.5 V39.5 A1.5,1.5 0 0 1 39.5,38 Z"/>
+</g>
+<g transform="rotate(7 56 54)">
+<path fill="#F7F5EE" d="M44.5,33 H67.5 A3.5,3.5 0 0 1 71,36.5 V71.5 A3.5,3.5 0 0 1 67.5,75 H44.5 A3.5,3.5 0 0 1 41,71.5 V36.5 A3.5,3.5 0 0 1 44.5,33 Z"/>
+<path fill="#F2B233" d="M45.5,36 H66.5 A1.5,1.5 0 0 1 68,37.5 V53.5 A1.5,1.5 0 0 1 66.5,55 H45.5 A1.5,1.5 0 0 1 44,53.5 V37.5 A1.5,1.5 0 0 1 45.5,36 Z"/>
+<path fill="#FFFFFF" d="M56,39.5 L57.6,44 L62,45.5 L57.6,47 L56,51.5 L54.4,47 L50,45.5 L54.4,44 Z"/>
+<path fill="#C9CEE2" d="M45,58.5 H67 A1,1 0 0 1 68,59.5 V59.5 A1,1 0 0 1 67,60.5 H45 A1,1 0 0 1 44,59.5 V59.5 A1,1 0 0 1 45,58.5 Z"/>
+<path fill="#C9CEE2" d="M45,62.5 H60 A1,1 0 0 1 61,63.5 V63.5 A1,1 0 0 1 60,64.5 H45 A1,1 0 0 1 44,63.5 V63.5 A1,1 0 0 1 45,62.5 Z"/>
+<path fill="#E0661F" d="M45.3,69 H53.7 A1.3,1.3 0 0 1 55,70.3 V70.3 A1.3,1.3 0 0 1 53.7,71.6 H45.3 A1.3,1.3 0 0 1 44,70.3 V70.3 A1.3,1.3 0 0 1 45.3,69 Z"/>
+</g>
+<g fill="none" stroke="#F2B233" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M35,37 V29 H43"/>
+<path d="M65,29 H73 V37"/>
+<path d="M73,71 V79 H65"/>
+<path d="M43,79 H35 V71"/>
+</g>
+</svg>

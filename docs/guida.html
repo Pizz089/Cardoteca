@@ -5,14 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guida all'utilizzo di Cardoteca</title>
 <meta name="description" content="Come si usa Cardoteca: aggiungere carte, collezione, mancanti, prezzi Cardmarket, album, mazzi, scambi, backup.">
+<meta name="theme-color" content="#1F2452">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preload" href="manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
+<header class="bar">
+<div class="wrap topbar">
+<a class="brand" href="index.html"><img src="icon.svg" alt="" width="36" height="36"><span>Cardoteca</span></a>
+<nav class="links" aria-label="Pagine">
+<a href="guida.html" aria-current="page">Guida</a>
+<a href="privacy.html">Privacy</a>
+</nav>
+<a class="btn btn-gold btn-small" href="https://github.com/Pizz089/Cardoteca/releases/latest">Scarica l'app</a>
+</div>
+</header>
+<main class="wrap doc">
+<header class="doc-head">
 <h1>Guida all'utilizzo</h1>
-<p class="muted">Cardoteca · Aggiornata alla versione 1.9</p>
+<p class="muted">Aggiornata alla versione 1.9</p>
 <p>Questa guida spiega come si usa Cardoteca, passo per passo. I nomi tra «» sono quelli che trovi scritti nell'app:
 schede, pulsanti, menu e impostazioni.</p>
+</header>
 
 <nav class="toc" aria-labelledby="indice">
 <h2 id="indice">Indice</h2>
@@ -36,6 +51,7 @@ schede, pulsanti, menu e impostazioni.</p>
 </ol>
 </nav>
 
+<div class="doc-body">
 <section id="installare">
 <h2>1. Installare e aggiornare</h2>
 <h3>Installare</h3>
@@ -639,13 +655,20 @@ incolla l'errore copiato dalla Diagnostica, se c'è.</p>
 </details>
 <p class="back"><a href="#indice">Torna all'indice</a></p>
 </section>
-
-<nav aria-label="Altre pagine">
-<a href="index.html">Torna a Cardoteca</a>
-<a href="privacy.html">Informativa sulla privacy</a>
-</nav>
-<footer>Cardoteca non è affiliata, approvata né sponsorizzata da The Pokémon Company, Nintendo, Creatures, GAME FREAK o
-Cardmarket. Pokémon e i nomi delle carte sono marchi dei rispettivi proprietari.</footer>
+</div>
 </main>
+
+<footer class="site-foot">
+<div class="wrap">
+<p>Cardoteca non è affiliata, approvata né sponsorizzata da The Pokémon Company, Nintendo, Creatures, GAME FREAK o
+Cardmarket. Pokémon e i nomi delle carte sono marchi dei rispettivi proprietari.</p>
+<nav class="foot-links" aria-label="Altre pagine">
+<a href="guida.html">Guida all'utilizzo</a>
+<a href="privacy.html">Informativa sulla privacy</a>
+<a href="https://github.com/Pizz089/Cardoteca/issues">Segnalazioni</a>
+<a href="manrope-OFL.txt">Carattere Manrope, licenza SIL OFL</a>
+</nav>
+</div>
+</footer>
 </body>
 </html>
