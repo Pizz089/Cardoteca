@@ -23,7 +23,7 @@
 </header>
 <main class="wrap page">
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Cardoteca · ultimo aggiornamento: 19 novembre 2026</p>
+<p class="muted">Cardoteca · ultimo aggiornamento: 22 novembre 2026</p>
 <p>Cardoteca è un'app Android gratuita per la propria collezione di carte Pokémon, sviluppata come progetto personale
 (<a href="https://github.com/Pizz089">Pizz089</a>), senza pubblicità e senza scopo di lucro. Questa pagina spiega quali
 dati usa e dove finiscono.</p>
@@ -36,11 +36,29 @@ un account lo sviluppatore non li riceve: l'app funziona così com'è, e l'accou
 <p>Per mostrare dati delle carte, immagini e prezzi l'app scarica pagine e file pubblici da servizi esterni, tra cui
 Cardmarket, TCGdex, Limitless e GitHub (per gli aggiornamenti dell'app). Queste richieste non contengono la tua
 collezione né dati personali; come per ogni sito, quei servizi vedono l'indirizzo di rete del telefono. Il server di
-Cardoteca, che si usa solo con un account, è descritto qui sotto.</p>
+Cardoteca è descritto qui sotto: con un account riceve i dati dell'account; anche senza account riceve il conteggio
+anonimo delle installazioni.</p>
+
+<h2>Conteggio delle installazioni</h2>
+<p>Per sapere quante app sono installate e con quali versioni, l'app manda al server di Cardoteca, al massimo una volta al
+giorno (all'apertura dell'app e, con l'app chiusa, quando partono i suoi lavori di sottofondo dei prezzi), un codice casuale
+creato alla prima apertura e il numero di versione. Succede anche senza account e non c'è un interruttore per spegnerlo.</p>
+<ul>
+<li>Il codice non è legato all'account, al telefono, alla collezione né a un identificativo di Android: è solo un numero
+casuale. Resta uguale con gli aggiornamenti; se reinstalli l'app o cancelli i suoi dati se ne crea uno nuovo.</li>
+<li>Non entra in nessun backup (né nel file di backup dell'app, né in quello di Android, né nel trasferimento a un altro
+telefono), quindi di norma due telefoni non hanno lo stesso codice (salvo strumenti che copiano tutti i dati delle app).</li>
+<li>Sul server restano il codice, la data del primo e dell'ultimo invio e la versione. I codici che non si fanno vivi da
+400 giorni si cancellano.</li>
+<li>L'indirizzo IP non si salva con il codice: per non accettare troppi codici nuovi dallo stesso indirizzo il server tiene
+per circa un giorno solo un conteggio per indirizzo, lo stesso descritto nella parte sull'account, cancellato dalla pulizia
+giornaliera.</li>
+<li>In Impostazioni → Diagnostica una riga dice quando è partito l'ultimo invio e l'eventuale errore; il codice non si vede.</li>
+</ul>
 
 <h2>Account (facoltativo)</h2>
 <p>Puoi creare un account Cardoteca per tenere la collezione uguale su più telefoni. Prima di creare l'account, di
-accedere o di collegare un telefono, l'app mostra una schermata «Cosa va sul server» che riassume queste informazioni. Senza account il server non riceve niente di te.</p>
+accedere o di collegare un telefono, l'app mostra una schermata «Cosa va sul server» che riassume queste informazioni. Senza account il server non riceve niente di te, a parte il conteggio anonimo delle installazioni (vedi sopra).</p>
 <p>Con un account, sul server vanno:</p>
 <ul>
 <li>il nome utente;</li>
@@ -66,13 +84,23 @@ dati»).</p>
 <h2>Collezione su più telefoni</h2>
 <p>Con un account collegato la collezione si sincronizza tra i telefoni dell'account. Sul server vanno le righe della
 collezione (copie, album, mazzi, scambi, carte in attesa, collezioni speciali e il resto, comprese le note che scrivi),
-i prezzi letti con il loro storico e alcune preferenze. Non ci vanno le immagini né il price guide di Cardmarket.
-Impostazioni, coda e backup restano di ogni telefono.</p>
+i prezzi letti con il loro storico e alcune preferenze, tra cui i collegamenti che hai fatto a mano tra uno stampino e la
+sua pagina Cardmarket. Non ci vanno le immagini del catalogo né il price guide di Cardmarket; ci vanno solo le foto
+descritte sotto. Impostazioni, coda e backup restano di ogni telefono.</p>
+<p>Le foto che un telefono scarica dalle pagine Cardmarket (per esempio quelle dei motivi dei reverse e degli stampini, o di
+una carta che non ha ancora un'immagine) vanno sul server e arrivano agli altri telefoni dello stesso account, che così non
+devono scaricarle di nuovo. Ogni foto è al massimo di 1 MB e un account ne tiene fino a 50 MB in tutto; un telefono le scarica
+solo se gli servono. Le foto di un account non le vede nessun altro account; si cancellano con l'account, dalla pulizia
+giornaliera del server (se sono molte, in più giorni). Ogni foto viaggia con una riga di accompagnamento (prodotto, carta e
+versione a cui è attaccata, data) che passa con la sincronizzazione come le altre preferenze.</p>
 <p>Se cancelli una riga sul telefono, sul server ne resta una traccia con i suoi ultimi dati (serve a far tornare la riga
 se un altro telefono la modifica) finché non cancelli l'account.</p>
 <p>Per dividere le letture automatiche dei prezzi tra i tuoi telefoni, il server tiene per mezz'ora quali pagine
 Cardmarket ha prenotato ogni telefono, e un eventuale blocco di Cardmarket segnalato da un telefono, che vale al massimo 2 ore.</p>
 <p>Il server è nell'account Cloudflare dello sviluppatore, che tecnicamente può vedere i dati che ci sono sopra.</p>
+<p>Lo sviluppatore può cancellare dal server un account usato in modo scorretto e bloccarne il nome: l'account, i suoi
+telefoni collegati, i dati della collezione sul server, le sue letture condivise e le sue foto si cancellano come con
+«Cancella l'account»; i dati sui suoi telefoni restano e quel nome non si può più registrare.</p>
 
 <h2>Prezzi condivisi (facoltativi)</h2>
 <p>Sono spenti di partenza e servono solo con un account. Se li accendi, l'app può usare le letture dei prezzi fatte
@@ -93,8 +121,8 @@ partire si cancellano.</li>
 </ul>
 
 <h2>Dove sono i dati</h2>
-<p>Il server di Cardoteca è un servizio di Cloudflare (Workers, con database D1) nell'account Cloudflare dello
-sviluppatore. Cloudflare tratta i dati come fornitore del servizio, secondo i suoi
+<p>Il server di Cardoteca è un servizio di Cloudflare (Workers, con database D1 e archivio Workers KV per le foto)
+nell'account Cloudflare dello sviluppatore. Cloudflare tratta i dati come fornitore del servizio, secondo i suoi
 <a href="https://www.cloudflare.com/terms/">termini</a> e la sua
 <a href="https://www.cloudflare.com/privacypolicy/">informativa sulla privacy</a>; come per ogni servizio su internet,
 vede le richieste di rete, indirizzo IP compreso. Le email passano da Gmail (vedi sopra). I dati non sono venduti né
@@ -103,8 +131,9 @@ ceduti a nessun altro.</p>
 <h2>Come cancellare i dati</h2>
 <ul>
 <li><strong>Account e tutti i suoi dati sul server</strong> (nome utente, email, dispositivi, righe della collezione e
-tracce delle righe cancellate, prezzi, prenotazioni, letture condivise): Impostazioni → Account e dispositivi →
-«Cancella l'account», con la password. I dati sul telefono restano.</li>
+tracce delle righe cancellate, prezzi, prenotazioni, letture condivise, foto): Impostazioni → Account e dispositivi →
+«Cancella l'account», con la password. I dati sul telefono restano. Le foto dell'account sul server le toglie la pulizia
+giornaliera, entro pochi giorni (se sono molte, in più giorni).</li>
 <li><strong>Un dispositivo</strong>: «Togli» accanto al dispositivo, «Esci da tutti gli altri dispositivi» o «Esci da
 questo dispositivo». Il dispositivo si scollega e i suoi dati restano sul telefono; la collezione resta sul server finché
 non cancelli l'account.</li>
@@ -134,7 +163,8 @@ Google</a>, compresi i requisiti di utilizzo limitato.</p>
 Sicurezza → App e servizi di terze parti. Per cancellare i backup, elimina la cartella «Cardoteca» dal tuo Drive.</p>
 
 <h2>Niente pubblicità né tracciamento</h2>
-<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento aggiunti dallo sviluppatore. Gli errori restano in
+<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento aggiunti dallo sviluppatore. L'unica cosa che manda
+anche senza account è il conteggio anonimo delle installazioni (vedi sopra). Gli errori restano in
 Impostazioni → Diagnostica sul telefono, e partono solo se decidi tu di condividerli.</p>
 <p>Per riconoscere le carte e i codici QR con la fotocamera l'app usa le librerie ML Kit di Google, che lavorano sul
 telefono: le immagini non vengono inviate. Secondo la documentazione di Google, ML Kit può però mandare a Google dati
@@ -142,8 +172,9 @@ tecnici anonimi d'uso (per esempio modello e versione del telefono, nome e versi
 funzionamento), mai il contenuto delle immagini. Questo invio fa parte della libreria e l'app non lo controlla.</p>
 
 <h2>Modifiche a questa pagina</h2>
-<p>Se una funzione nuova manderà altri dati al server, questa pagina sarà aggiornata prima che la funzione sia
-disponibile, e l'app chiederà il consenso prima di inviarli.</p>
+<p>Se una funzione nuova manderà altri dati al server, questa pagina sarà aggiornata insieme alla funzione. Per chi crea un
+account o collega un telefono, la schermata «Cosa va sul server» dice sempre cosa ci va; chi è già collegato non riceve un avviso
+per le novità che la pagina descrive (come le foto), ma le trova qui.</p>
 
 <h2>Contatti</h2>
 <p>Per domande o richieste apri una segnalazione su

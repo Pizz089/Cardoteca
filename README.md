@@ -35,8 +35,11 @@ impostazioni passano nella nuova app. Dopo il passaggio puoi disinstallare Poké
 
 ## I tuoi dati
 
-Senza account la collezione resta sul tuo telefono. Con l'account facoltativo (per usarla su più telefoni) e con i prezzi
-condivisi (facoltativi) alcuni dati vanno anche sul server dell'app: i dettagli sono nell'[informativa sulla
+Senza account la collezione resta sul tuo telefono; l'app manda solo, una volta al giorno, un conteggio anonimo delle
+installazioni (un codice casuale e il numero di versione, senza legame con te). Con l'account facoltativo (per usarla su
+più telefoni, anche con le foto scaricate da Cardmarket e i collegamenti degli stampini) e con i prezzi condivisi
+(facoltativi) alcuni dati vanno anche sul server dell'app, e lo sviluppatore può cancellare un account usato in modo
+scorretto: i dettagli sono nell'[informativa sulla
 privacy](https://pizz089.github.io/Cardoteca/privacy.html). Fai ogni tanto un backup (Impostazioni → Backup → "Esporta
 backup") e tienilo fuori dal telefono: se cambi telefono o disinstalli l'app, è il modo per recuperarla.
 
