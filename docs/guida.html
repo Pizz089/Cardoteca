@@ -24,7 +24,7 @@
 <main class="wrap doc">
 <header class="doc-head">
 <h1>Guida all'utilizzo</h1>
-<p class="muted">Aggiornata alla versione 1.9</p>
+<p class="muted">Aggiornata alla versione 2.0</p>
 <p>Questa guida spiega come si usa Cardoteca, passo per passo. I nomi tra «» sono quelli che trovi scritti nell'app:
 schede, pulsanti, menu e impostazioni.</p>
 </header>
@@ -44,7 +44,7 @@ schede, pulsanti, menu e impostazioni.</p>
 <li><a href="#collezioni-speciali">Collezioni speciali</a></li>
 <li><a href="#mazzi">Mazzi</a></li>
 <li><a href="#scambi">Scambi</a></li>
-<li><a href="#account">Più telefoni con un account</a></li>
+<li><a href="#account">L'account e la collezione sul server</a></li>
 <li><a href="#backup">Backup e cambio di telefono</a></li>
 <li><a href="#impostazioni">Impostazioni</a></li>
 <li><a href="#domande">Domande frequenti e problemi</a></li>
@@ -57,7 +57,7 @@ schede, pulsanti, menu e impostazioni.</p>
 <h3>Installare</h3>
 <ol>
 <li>Dal telefono apri la pagina delle <a href="https://github.com/Pizz089/Cardoteca/releases">versioni di Cardoteca</a> e,
-nella versione segnata «Latest» (per esempio «Cardoteca 1.9»), scarica il file <code>Cardoteca-build….apk</code>.</li>
+nella versione segnata «Latest» (per esempio «Cardoteca 2.0»), scarica il file <code>Cardoteca-build….apk</code>.</li>
 <li>Apri il file scaricato. Android chiede di permettere al browser (o all'app dei file) di installare app: concedilo.</li>
 <li>Play Protect, la protezione di Google, può avvisarti che l'app non è conosciuta, perché non arriva dal Play Store, e
 proporti di analizzarla. Puoi farla analizzare e poi installarla.</li>
@@ -81,22 +81,40 @@ automatico, prima di installare l'app fa un backup, quando l'ultimo ha più di u
 </ul>
 <p>«Controlla ora» guarda subito. Se torni da Anteprima a Stabile resti sulla versione che hai finché non esce una
 stabile più recente.</p>
+<p>Dalla versione 2.0 per usare l'app serve un account: se aggiorni da una versione precedente senza account, al primo
+avvio l'app te lo chiede (vedi <a href="#primo-avvio">Primo avvio</a>). I dati che hai sul telefono restano. Se hai più
+telefoni sullo stesso account, aggiornali tutti: un telefono con una versione vecchia può smettere di sincronizzarsi (vedi
+<a href="#account">L'account e la collezione sul server</a>).</p>
 <p class="back"><a href="#indice">Torna all'indice</a></p>
 </section>
 
 <section id="primo-avvio">
 <h2>2. Primo avvio</h2>
-<p>Al primo avvio, con la collezione vuota, l'app si apre su «Benvenuto in Cardoteca» e ti propone di portare qui la
-collezione che hai già:</p>
+<p>Dalla versione 2.0 per usare l'app serve un account. Al primo avvio, e ogni volta che il telefono non è collegato a un
+account, al posto delle schede compare la schermata «Cardoteca»: «Per usare l'app serve un account.» e «L'email non è
+obbligatoria.».</p>
 <ul>
-<li>«Trasferisci da PokéCollezione»: c'è solo se hai PokéCollezione sul telefono (vedi <a href="#backup">Backup e cambio di
-telefono</a>).</li>
+<li>«Crea un account»: scegli nome utente e password (l'email è facoltativa).</li>
+<li>«Accedi»: se hai già un account, con nome utente e password.</li>
+<li>«Collega con un codice»: con il codice o il QR mostrato da un telefono già collegato.</li>
+</ul>
+<p>Prima di ognuna l'app mostra «Cosa va sul server» (vedi <a href="#account">L'account e la collezione sul server</a>).
+Appena il telefono è collegato si apre la Collezione.</p>
+<p>Sotto, in «Hai già una collezione?», trovi le voci che funzionano anche senza account:</p>
+<ul>
 <li>«Importa un backup»: scegli un file di backup di Cardoteca.</li>
 <li>«Ripristina da Google Drive»: se salvavi i backup sul tuo Drive.</li>
-<li>«Entra con un account»: se usi già Cardoteca con un account su un altro telefono.</li>
-<li>«Inizia da zero»: parti con la collezione vuota.</li>
+<li>«Trasferisci da PokéCollezione»: c'è solo se hai PokéCollezione sul telefono (vedi <a href="#backup">Backup e cambio di
+telefono</a>).</li>
+<li>«Esporta un backup»: c'è solo se sul telefono ci sono già dei dati; salva la collezione in un file anche senza
+account.</li>
 </ul>
-<p>Ogni importazione ti chiede conferma prima di cambiare i dati.</p>
+<p>La collezione che porti qui finisce nell'account che crei dopo; se accedi a un account che ha già dei dati, l'app ti
+chiede quali tenere (vedi <a href="#account">L'account e la collezione sul server</a>). Ogni importazione ti chiede
+conferma prima di cambiare i dati.</p>
+<p>Senza rete i pulsanti dell'account danno un errore di rete: «Riprova», in fondo, ricontrolla il server. Se il server
+dell'app è spento o in manutenzione la schermata non compare e l'app si apre come prima, con il benvenuto «Benvenuto in
+Cardoteca» se la collezione è vuota.</p>
 <p class="back"><a href="#indice">Torna all'indice</a></p>
 </section>
 
@@ -293,8 +311,8 @@ indicata a parte. Si spegne con «Stima per i prezzi mai letti».</p>
 <p>In cima a Impostazioni → «Prezzi» scegli come l'app usa Cardmarket. Vale subito, per questo telefono:</p>
 <ul>
 <li>«Automatici» (di partenza): i prezzi della collezione si aggiornano da soli, come scegli in «Aggiornamento
-automatico» (con un account, solo se il telefono ha acceso «Questo telefono legge i prezzi in automatico», vedi
-<a href="#account">Più telefoni con un account</a>).</li>
+automatico» (con la collezione sul server accesa, solo se il telefono ha acceso «Questo telefono legge i prezzi in
+automatico», vedi <a href="#account">L'account e la collezione sul server</a>).</li>
 <li>«Solo quando apro la carta»: l'app non legge niente da sola. Il prezzo si aggiorna quando apri la carta, la scansioni,
 tocchi «Aggiorna prezzi» o un aggiornamento veloce, o lavori in uno scambio.</li>
 <li>«Nessun prezzo»: l'app non legge Cardmarket e non mostra prezzi, stime né andamenti, solo le carte. Il pulsante
@@ -340,7 +358,7 @@ chiederà spesso la verifica di sicurezza, che compare nel riquadro.</li>
 in alto, o «Completa la verifica» nel riquadro del prezzo, e segui la pagina. Se succede con l'app chiusa arriva una
 notifica: aprendo l'app la verifica compare subito. L'app non aggira mai questa verifica.</p>
 <h3>Prezzi condivisi tra utenti (facoltativi)</h3>
-<p>Con un account (vedi <a href="#account">Più telefoni con un account</a>) puoi scambiare le letture dei prezzi con gli
+<p>Con l'account (vedi <a href="#account">L'account e la collezione sul server</a>) puoi scambiare le letture dei prezzi con gli
 altri utenti: così ognuno apre meno pagine Cardmarket. Sono spenti finché non dici di sì: l'app lo chiede una volta
 («Salva» o «Decido dopo»), poi la scelta sta in Impostazioni → «Prezzi condivisi», con due interruttori:</p>
 <ul>
@@ -490,57 +508,86 @@ toccano.</p>
 </section>
 
 <section id="account">
-<h2>13. Più telefoni con un account (facoltativo)</h2>
-<p>Senza account l'app funziona come sempre. Con un account i tuoi telefoni hanno la stessa collezione. Tutto parte da
-Impostazioni → «Account e dispositivi».</p>
+<h2>13. L'account e la collezione sul server</h2>
+<p>Dalla versione 2.0 per usare l'app serve un account (l'email non è obbligatoria). Con l'account i tuoi telefoni hanno la
+stessa collezione e non la perdi se cambi telefono. Tutto parte da Impostazioni → «Account e dispositivi»; al primo
+avvio, o senza un account collegato, la schermata dell'account (vedi <a href="#primo-avvio">Primo avvio</a>) ha gli
+stessi pulsanti.</p>
 <h3>Creare l'account</h3>
 <ol>
 <li>Tocca «Crea un account». Prima l'app ti mostra «Cosa va sul server»: leggilo e tocca «Continua».</li>
 <li>Scegli nome utente e password. L'email è facoltativa: se la scrivi ti arriva un codice (guarda anche
 nello spam) da scrivere nella parte «Email» della pagina, poi «Conferma». Solo con l'email confermata puoi recuperare la
 password con un codice.</li>
-<li>Tocca «Crea».</li>
+<li>Tocca «Crea». La collezione che hai già sul telefono va nell'account nuovo.</li>
 </ol>
 <h3>Collegare un altro telefono</h3>
 <ol>
 <li>Sul telefono già collegato tocca «Aggiungi un dispositivo»: compaiono un codice di 8 caratteri e un QR, validi per
 pochi minuti.</li>
-<li>Sull'altro telefono, in «Account e dispositivi», tocca «Collega con un codice» e scrivi il codice, oppure tocca lì
-«Inquadra il QR».</li>
+<li>Sull'altro telefono tocca «Collega con un codice» e scrivi il codice, oppure tocca lì «Inquadra il QR».</li>
 </ol>
 <p>Puoi anche entrare con «Accedi», nome utente e password («Password dimenticata» se non la ricordi). Puoi collegare fino a 5
-dispositivi; «Togli» ne scollega uno.</p>
+dispositivi; «Togli» ne scollega uno. Aggiorna l'app su tutti i telefoni dell'account: con una versione precedente alla 2.0
+un telefono smette di sincronizzarsi quando cambia qualcosa nella collezione sul server, e l'app te lo ricorda prima di
+spegnerla, riaccenderla o caricare i dati.</p>
 <h3>Cosa si tiene uguale</h3>
 <p>Copie, sigillati, album, mazzi, scambi, carte in attesa, collezioni speciali, i prezzi letti, i collegamenti degli stampini
 alle pagine Cardmarket (collegare e «Scollega» valgono su tutti i telefoni) e alcune preferenze (master
-set, carte escluse dalla condivisione). Una modifica arriva sugli altri telefoni entro una quindicina di secondi con l'app aperta, di solito entro
-un quarto d'ora con l'app chiusa (quando parte lo decide Android). Senza rete ogni telefono lavora da solo e invia dopo. Le impostazioni restano di ogni
-telefono. «Sincronizza ora» invia e riceve subito.</p>
-<p>Anche le foto scaricate dalle pagine Cardmarket (motivi dei reverse, stampini, carte senza immagine) passano da un telefono
-all'altro: se un telefono ne ha scaricata una, gli altri la ricevono in sottofondo, senza aprire la pagina e senza leggere una
-pagina Cardmarket in più, ma solo se per loro serve e se la carta e la versione sono le stesse. In Impostazioni → «Diagnostica» la
-riga «Foto tra i telefoni» dice quante ne ha caricate e scaricate questo telefono.</p>
-<p>Se entri in un account che ha già una collezione con un telefono che ne ha una sua, l'app non mescola le due: puoi solo sostituire i
-dati del telefono con quelli dell'account («Sostituisci», con un backup completo prima) o uscire («Annulla ed esci»).</p>
+set, carte escluse dalla condivisione). Una modifica arriva sugli altri telefoni entro un minuto circa con l'app aperta, di
+solito entro un'ora con l'app chiusa (quando parte lo decide Android). Senza rete ogni telefono lavora da solo e invia dopo.
+Le impostazioni restano di ogni telefono. «Sincronizza ora» invia e riceve subito.</p>
+<p>Anche le foto scaricate dalle pagine Cardmarket (motivi dei reverse, stampini, carte senza immagine, prodotti sigillati)
+passano da un telefono all'altro: se un telefono ne ha scaricata una, gli altri la ricevono in sottofondo, senza aprire la
+pagina e senza leggere una pagina Cardmarket in più, ma solo se per loro serve e se la carta e la versione sono le stesse.
+In Impostazioni → «Diagnostica» la riga «Foto tra i telefoni» dice quante ne ha caricate e scaricate questo telefono.</p>
+<h3>Quando il telefono e l'account hanno tutti e due dei dati</h3>
+<p>Se entri in un account che ha già una collezione con un telefono che ne ha una sua, l'app non mescola le due e non
+cancella niente da sola: ti chiede quali tenere, e prima fa un backup completo del telefono.</p>
+<ul>
+<li>«Ricevi i dati dell'account»: i dati della collezione di questo telefono lasciano il posto a quelli dell'account.</li>
+<li>«Carica i dati di questo telefono»: i dati dell'account sul server lasciano il posto a quelli di questo telefono (con
+una conferma); gli altri telefoni dell'account dovranno scegliere anche loro.</li>
+<li>«Annulla»: il telefono esce dall'account e i suoi dati restano.</li>
+</ul>
+<p>La stessa scelta compare quando un altro telefono ha caricato i suoi dati o ha riacceso la collezione sul server. Finché
+non scegli, in alto sulle schede c'è la barra «Da decidere…» con «Scegli», che apre «Account e dispositivi». Se un altro
+telefono sta ancora caricando i suoi dati, «Ricevi i dati dell'account» è spento e la pagina lo dice: potrai riceverli
+quando ha finito.</p>
+<h3>Spegnere la collezione sul server</h3>
+<p>Nella scheda «Sincronizzazione» l'interruttore «Collezione sul server» è acceso di partenza. Spegnendolo (con una
+conferma) la collezione, i prezzi letti e le foto spariscono dal server: da subito non li vede più nessuno e si cancellano
+del tutto entro pochi giorni. Vale per tutto l'account: i telefoni smettono di tenersi uguali, ma su ogni telefono resta
+tutto e l'account resta. Con la collezione sul server spenta ogni telefono aggiorna i suoi prezzi da solo e passa da solo le
+sue carte in attesa.</p>
+<p>Riaccendendolo (con una conferma) i dati di questo telefono vanno sul server, e gli altri telefoni dell'account scelgono se
+riceverli o caricare i loro.</p>
 <h3>I telefoni che leggono i prezzi</h3>
 <p>In «Telefoni che leggono i prezzi» l'interruttore «Questo telefono legge i prezzi in automatico» dice quali telefoni
 aggiornano i prezzi da soli: se sono più d'uno si dividono le carte. Le letture che chiedi tu, come aprire una carta,
 funzionano su tutti. Le carte in attesa passano in collezione sul primo telefono che legge i prezzi (con un solo telefono nell'account passano
 comunque). Passando a «Solo quando apro la carta» o «Nessun prezzo» l'interruttore si spegne, e tornando ad «Automatici»
-resta spento finché non lo riaccendi tu.</p>
+resta spento finché non lo riaccendi tu. Tutto questo vale con la collezione sul server accesa.</p>
 <h3>Cosa va sul server</h3>
-<p>Sul server gestito dallo sviluppatore vanno il nome utente, l'email se la scrivi, il nome dei dispositivi, le righe della
-collezione, i prezzi letti e alcune preferenze, le foto scaricate dalle pagine Cardmarket (solo per i telefoni del tuo account) e non le altre immagini; per poco tempo anche l'indirizzo IP e la data dell'ultimo contatto e, se accendi i prezzi condivisi, le letture che condividi. Senza account il server riceve solo il conteggio anonimo delle installazioni (vedi «Impostazioni»). La password non lascia mai il telefono. I dettagli sono
-nella schermata «Cosa va sul server» e nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
+<p>Sul server gestito dallo sviluppatore vanno il nome utente, l'email se la scrivi, il nome dei dispositivi e la versione
+dell'app di ciascuno; finché la collezione sul server è accesa anche le righe della collezione, i prezzi letti, alcune
+preferenze e le foto scaricate dalle pagine Cardmarket (solo per i telefoni del tuo account), non le altre immagini; per
+poco tempo anche l'indirizzo IP e la data dell'ultimo contatto e, se accendi i prezzi condivisi, le letture che condividi.
+La password non lascia mai il telefono. I dettagli sono nella schermata «Cosa va sul server» e nell'<a
+href="privacy.html">informativa sulla privacy</a>.</p>
+<h3>Uscire e cancellare</h3>
 <p>«Esci da questo dispositivo» scollega questo telefono, «Esci da tutti gli altri dispositivi» scollega gli altri. «Cancella
-l'account» toglie dal server l'account e i suoi dati; i dati sul telefono restano.</p>
+l'account» toglie dal server l'account e i suoi dati entro pochi giorni; i dati sul telefono restano. Dopo l'uscita o la
+cancellazione l'app torna alla schermata dell'account: per usarla serve di nuovo un account. Un account senza contatti da
+24 mesi si cancella da solo; l'app aperta tiene vivo il contatto.</p>
 <p class="back"><a href="#indice">Torna all'indice</a></p>
 </section>
 
 <section id="backup">
 <h2>14. Backup e cambio di telefono</h2>
-<p>Tutto sta in Impostazioni → «Backup». Fai un backup ogni tanto e tienilo fuori dal telefono: se cambi telefono o
-disinstalli l'app, senza account è il modo sicuro per recuperare la collezione.</p>
+<p>Tutto sta in Impostazioni → «Backup». Fai un backup ogni tanto e tienilo fuori dal telefono: con la collezione sul
+server spenta, se cambi telefono o disinstalli l'app, è il modo sicuro per recuperare la collezione, e anche con la
+collezione sul server accesa resta una copia in più.</p>
 <h3>A mano</h3>
 <ul>
 <li>«Esporta backup» salva in un file collezione, carte in attesa, album, mazzi, scambi, prezzi letti e impostazioni.</li>
@@ -549,8 +596,11 @@ di adesso: «Ripristina i dati di prima» la rimette.</li>
 <li>«Foto scaricate da Cardmarket» mette nel backup le foto scaricate dalle pagine Cardmarket; «Tutte le immagini», solo nel
 backup a mano, anche tutte le altre (il file diventa grande).</li>
 </ul>
-<p>Importare un backup su un telefono collegato a un account lo scollega dall'account, così i dati del backup non vanno
-sugli altri telefoni.</p>
+<p>Importare un backup su un telefono collegato a un account non lo scollega più. Se l'account ha già dei dati della
+collezione, dopo il riavvio scegli se tenerli o caricare sull'account quelli del backup (vedi <a href="#account">L'account
+e la collezione sul server</a>), e i dati del backup vanno sugli altri telefoni solo se scegli «Carica i dati di questo
+telefono». Se invece sull'account non c'è ancora nessun dato della collezione, dopo il riavvio i dati del backup vanno sul
+server senza chiedere, come per un account nuovo.</p>
 <h3>Backup automatico</h3>
 <ol>
 <li>Accendi «Backup automatico» e scegli la cartella in cui salvarlo (dopo la cambi con «Scegli cartella»).</li>
@@ -569,15 +619,16 @@ carica un backup nuovo (quando parte lo decide Android). «Fai un backup su Driv
 anche con i dati mobili, dopo una conferma con il peso del file; «Spegni Drive» lo spegne e lascia i file sul Drive. Due
 telefoni con lo stesso account Google sulla stessa cartella si cancellano a vicenda i backup oltre il numero da tenere.</p>
 <h3>Cambio di telefono</h3>
-<p>Installa Cardoteca sul telefono nuovo. Nella schermata di benvenuto scegli «Importa un backup», «Ripristina da Google
-Drive» o «Entra con un account».</p>
+<p>Installa Cardoteca sul telefono nuovo ed entra con il tuo account («Accedi» o «Collega con un codice»): con la
+collezione sul server accesa la collezione arriva da sola. Puoi anche partire da un backup con «Importa un backup» o
+«Ripristina da Google Drive» nella schermata dell'account.</p>
 <h3>Da PokéCollezione</h3>
 <ol>
 <li>Installa Cardoteca.</li>
 <li>Dalle <a href="https://github.com/Pizz089/Cardoteca/releases">versioni di Cardoteca</a> installa anche «PokéCollezione:
 ultimo aggiornamento».</li>
-<li>In PokéCollezione tocca «Trasferisci a Cardoteca» (ci arrivi anche da «Trasferisci da PokéCollezione» nel benvenuto
-di Cardoteca) e conferma in Cardoteca.</li>
+<li>In PokéCollezione tocca «Trasferisci a Cardoteca» (ci arrivi anche da «Trasferisci da PokéCollezione» nella schermata
+dell'account di Cardoteca) e conferma in Cardoteca.</li>
 </ol>
 <p>Collezione, album, prezzi letti e impostazioni passano nella nuova app. Dopo il passaggio puoi disinstallare
 PokéCollezione.</p>
@@ -594,7 +645,7 @@ price guide e stime.</li>
 <li>«Aggiornamento automatico»: quando l'app aggiorna i prezzi da sola e quante pagine Cardmarket all'ora.</li>
 <li>«Carte»: «Effetto olografico», acceso o spento.</li>
 <li>«Backup»: backup a mano, automatico e su Google Drive.</li>
-<li>«Account e dispositivi»: l'account facoltativo, i telefoni collegati e la sincronizzazione.</li>
+<li>«Account e dispositivi»: l'account, i telefoni collegati, la collezione sul server e la sincronizzazione.</li>
 <li>«Prezzi condivisi»: i due interruttori per usare e condividere le letture dei prezzi.</li>
 <li>«Aggiornamenti dell'app»: versione installata, canale e «Controlla ora».</li>
 <li>«Diagnostica»: immagini e loghi, pagine Cardmarket, blocchi e ultimo errore, utile per segnalare un problema. Ci trovi
@@ -617,7 +668,7 @@ nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
 <li>Guarda la barra in alto. «A rate: …» vuol dire che sono finite le pagine dell'ora: riprende da sola all'ora scritta.
 «Cardmarket ha chiesto di rallentare: …» è un blocco di Cardmarket: l'app aspetta e riprende. «In pausa»: tocca
 «Riprendi».</li>
-<li>Con un account guarda Impostazioni → «Account e dispositivi» → «Telefoni che leggono i prezzi»: se «Questo telefono legge i prezzi in automatico» è spento, il telefono non legge niente da solo.</li>
+<li>Con la collezione sul server accesa guarda Impostazioni → «Account e dispositivi» → «Telefoni che leggono i prezzi»: se «Questo telefono legge i prezzi in automatico» è spento, il telefono non legge niente da solo.</li>
 <li>Con la stima accesa le carte mai lette non si leggono da sole: apri la carta o tocca «Aggiorna prezzi».</li>
 <li>Con l'app chiusa è Android a decidere quando leggere: aprire l'app fa ripartire le letture.</li>
 <li>«Nessuna offerta in … su Cardmarket»: in quella lingua, con la tua «Condizione minima», oggi non ci sono offerte.</li>
@@ -648,8 +699,14 @@ dalla lista con «Aggiungi a mano».</p>
 <details>
 <summary>Manca la foto di una carta</summary>
 <p>Nella pagina della carta compare un riquadro «Manca la foto…». Tocca «Scarica la foto da Cardmarket»: si apre la sua
-pagina Cardmarket, la foto si scarica da sola e resta salvata. Con un account può arrivare dall'altro tuo telefono se l'ha già
-scaricata; altrimenti arriva da sola alla lettura del prezzo successiva su questo telefono.</p>
+pagina Cardmarket, la foto si scarica da sola e resta salvata. Con la collezione sul server accesa può arrivare dall'altro tuo telefono se l'ha
+già scaricata; altrimenti arriva da sola alla lettura del prezzo successiva su questo telefono.</p>
+</details>
+<details>
+<summary>L'app mi chiede un account e non apre le schede</summary>
+<p>Dalla versione 2.0 serve un account: creane uno (anche senza email) o entra con quello che hai. I dati che hai già sul
+telefono restano. Se non vuoi tenere la collezione sul server, dopo spegni «Collezione sul server» in Impostazioni →
+«Account e dispositivi». Se la schermata dice che il server non risponde, controlla la rete e tocca «Riprova».</p>
 </details>
 <details>
 <summary>Dove vedo gli errori</summary>

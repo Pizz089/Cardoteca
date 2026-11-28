@@ -35,13 +35,17 @@ impostazioni passano nella nuova app. Dopo il passaggio puoi disinstallare Poké
 
 ## I tuoi dati
 
-Senza account la collezione resta sul tuo telefono; l'app manda solo, una volta al giorno, un conteggio anonimo delle
-installazioni (un codice casuale e il numero di versione, senza legame con te). Con l'account facoltativo (per usarla su
-più telefoni, anche con le foto scaricate da Cardmarket e i collegamenti degli stampini) e con i prezzi condivisi
-(facoltativi) alcuni dati vanno anche sul server dell'app, e lo sviluppatore può cancellare un account usato in modo
-scorretto: i dettagli sono nell'[informativa sulla
+Dalla versione 2.0 per usare l'app serve un account: nome utente e password, l'email non è obbligatoria. I dati che
+hai già sul telefono restano e vanno nell'account. Di partenza la collezione, i prezzi letti e le foto scaricate da
+Cardmarket vanno anche sul server dell'app, così i telefoni del tuo account restano uguali e non perdi niente; se non
+la vuoi, spegni "Collezione sul server" in Impostazioni → Account e dispositivi: i dati spariscono dal server e restano
+sul telefono. "Cancella l'account" toglie dal server l'account e i suoi dati; un account senza contatti da 24 mesi si
+cancella da solo. L'app manda anche, una volta al giorno, un conteggio anonimo delle installazioni (un codice casuale e
+il numero di versione, senza legame con te). Con i prezzi condivisi (facoltativi) vanno sul server anche le letture che
+condividi, e lo sviluppatore può cancellare un account usato in modo scorretto: i dettagli sono nell'[informativa sulla
 privacy](https://pizz089.github.io/Cardoteca/privacy.html). Fai ogni tanto un backup (Impostazioni → Backup → "Esporta
-backup") e tienilo fuori dal telefono: se cambi telefono o disinstalli l'app, è il modo per recuperarla.
+backup") e tienilo fuori dal telefono: è una copia in più, e con la collezione sul server spenta è il modo per
+recuperarla se cambi telefono o disinstalli l'app.
 
 ## Note
 

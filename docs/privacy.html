@@ -23,21 +23,26 @@
 </header>
 <main class="wrap page">
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Cardoteca · ultimo aggiornamento: 22 novembre 2026</p>
+<p class="muted">Cardoteca · ultimo aggiornamento: 28 novembre 2026</p>
 <p>Cardoteca è un'app Android gratuita per la propria collezione di carte Pokémon, sviluppata come progetto personale
 (<a href="https://github.com/Pizz089">Pizz089</a>), senza pubblicità e senza scopo di lucro. Questa pagina spiega quali
 dati usa e dove finiscono.</p>
 
 <h2>Dati sul telefono</h2>
-<p>Collezione, album, mazzi, scambi, prezzi letti e impostazioni stanno nella memoria dell'app sul tuo telefono. Senza
-un account lo sviluppatore non li riceve: l'app funziona così com'è, e l'account è facoltativo (vedi sotto).</p>
+<p>Collezione, album, mazzi, scambi, prezzi letti e impostazioni stanno nella memoria dell'app sul tuo telefono. Dalla
+versione 2.0 per usare l'app serve un account (l'email non è obbligatoria) e, di partenza, la collezione, i prezzi letti e
+le foto scaricate da Cardmarket vanno anche sul server dell'app; puoi spegnerlo quando vuoi (vedi «Collezione sul
+server»). Sul telefono resta comunque tutto.</p>
+<p>L'obbligo vale dalla versione 2.0. Le versioni precedenti funzionano anche senza account e, senza account, non mandano
+al server altro che il conteggio anonimo delle installazioni (dalla build 181; la 1.9 nemmeno quello).</p>
 
 <h2>Connessioni dell'app</h2>
 <p>Per mostrare dati delle carte, immagini e prezzi l'app scarica pagine e file pubblici da servizi esterni, tra cui
 Cardmarket, TCGdex, Limitless e GitHub (per gli aggiornamenti dell'app). Queste richieste non contengono la tua
 collezione né dati personali; come per ogni sito, quei servizi vedono l'indirizzo di rete del telefono. Il server di
-Cardoteca è descritto qui sotto: con un account riceve i dati dell'account; anche senza account riceve il conteggio
-anonimo delle installazioni.</p>
+Cardoteca è descritto qui sotto: riceve i dati dell'account e il conteggio anonimo delle installazioni. All'apertura l'app
+gli chiede anche se per usarla serve un account (e, finché il telefono non è collegato, a ogni ritorno nell'app): questa
+richiesta non contiene dati tuoi.</p>
 
 <h2>Conteggio delle installazioni</h2>
 <p>Per sapere quante app sono installate e con quali versioni, l'app manda al server di Cardoteca, al massimo una volta al
@@ -56,20 +61,27 @@ giornaliera.</li>
 <li>In Impostazioni → Diagnostica una riga dice quando è partito l'ultimo invio e l'eventuale errore; il codice non si vede.</li>
 </ul>
 
-<h2>Account (facoltativo)</h2>
-<p>Puoi creare un account Cardoteca per tenere la collezione uguale su più telefoni. Prima di creare l'account, di
-accedere o di collegare un telefono, l'app mostra una schermata «Cosa va sul server» che riassume queste informazioni. Senza account il server non riceve niente di te, a parte il conteggio anonimo delle installazioni (vedi sopra).</p>
+<h2>Account</h2>
+<p>Dalla versione 2.0 per usare Cardoteca serve un account: senza, al posto dell'app compare una schermata che chiede di
+crearne uno, di accedere o di collegare il telefono con un codice. L'email non è obbligatoria. Dalla stessa schermata puoi
+importare un backup, ripristinarlo da Google Drive o esportare i dati che hai già sul telefono, così nessuno resta chiuso
+fuori con i suoi dati. Se il server dell'app è spento o in manutenzione la schermata non compare e l'app si usa come
+prima. Prima di creare l'account, di accedere o di collegare un telefono, l'app mostra una schermata «Cosa va sul
+server» che riassume queste informazioni. Prima di avere un account il server non riceve niente di te, a parte il
+conteggio anonimo delle installazioni (vedi sopra).</p>
 <p>Con un account, sul server vanno:</p>
 <ul>
 <li>il nome utente;</li>
 <li>l'email, solo se la scrivi;</li>
-<li>il nome dei dispositivi collegati (al massimo 5), con la data in cui sono stati collegati e quella dell'ultimo
-contatto di ognuno.</li>
+<li>il nome dei dispositivi collegati (al massimo 5), con la data in cui sono stati collegati, quella dell'ultimo
+contatto di ognuno e il numero di versione dell'app installata (serve ad avvisarti se un tuo telefono ha una versione
+troppo vecchia).</li>
 </ul>
 <p>Il server tiene per poco tempo anche il tuo indirizzo IP, solo per limitare i tentativi ripetuti (per esempio di
 accesso o di recupero della password) e il numero di richieste. Non è collegato al tuo account e per le reti IPv6 si
 tiene solo la parte iniziale dell'indirizzo. Viene cancellato dalla pulizia giornaliera del server, al massimo un paio
-di giorni dopo; in tutte le altre richieste l'indirizzo serve solo a controllare che non sia bloccato e non si salva.</p>
+di giorni dopo. Quando crei un account, accedi, colleghi un telefono con un codice o recuperi la password l'indirizzo
+serve anche a controllare che non sia bloccato; nelle altre richieste non si salva.</p>
 <p>La password non lascia mai il telefono: al server arriva solo un valore calcolato da essa, e non si salva sul
 telefono. Sul server resta una versione ancora trasformata di quel valore, non la password.</p>
 <p>L'email serve solo a mandarti i codici di conferma dell'indirizzo e di recupero della password (valgono 15 minuti e
@@ -77,26 +89,37 @@ sul server restano solo in forma non leggibile). Il recupero per email funziona 
 email la password si recupera da un altro dispositivo già collegato. Le email partono dalla casella di posta Gmail dello
 sviluppatore, quindi passano anche da Gmail.</p>
 <p>Se crei un account ma non ci sincronizzi nulla e per 30 giorni nessun dispositivo si fa vivo, il server lo cancella da
-solo, con tutto quello che ha (se apri l'app, il telefono collegato si fa sentire da solo almeno una volta ogni 7 giorni). Un account
-che ha già sincronizzato la collezione non viene cancellato in automatico: lo cancelli tu (vedi «Come cancellare i
+solo, con tutto quello che ha. Un account senza contatti da 24 mesi, anche se ha sincronizzato la collezione, si cancella
+dal server come con «Cancella l'account»; i dati sul telefono restano. Se apri l'app, il telefono collegato si fa sentire
+da solo (almeno una volta ogni 7 giorni anche solo aprendola). Puoi sempre cancellarlo tu (vedi «Come cancellare i
 dati»).</p>
 
-<h2>Collezione su più telefoni</h2>
-<p>Con un account collegato la collezione si sincronizza tra i telefoni dell'account. Sul server vanno le righe della
-collezione (copie, album, mazzi, scambi, carte in attesa, collezioni speciali e il resto, comprese le note che scrivi),
-i prezzi letti con il loro storico e alcune preferenze, tra cui i collegamenti che hai fatto a mano tra uno stampino e la
-sua pagina Cardmarket. Non ci vanno le immagini del catalogo né il price guide di Cardmarket; ci vanno solo le foto
-descritte sotto. Impostazioni, coda e backup restano di ogni telefono.</p>
+<h2>Collezione sul server</h2>
+<p>Con un account, di partenza, la collezione va anche sul server e si tiene uguale tra i telefoni dell'account. Sul server
+vanno le righe della collezione (copie, album, mazzi, scambi, carte in attesa, collezioni speciali e il resto, comprese le
+note che scrivi), i prezzi letti con il loro storico e alcune preferenze, tra cui i collegamenti che hai fatto a mano tra
+uno stampino e la sua pagina Cardmarket. Non ci vanno le immagini del catalogo né il price guide di Cardmarket; ci vanno
+solo le foto descritte sotto. Impostazioni, coda e backup restano di ogni telefono.</p>
+<p><strong>Per spegnerla</strong>: Impostazioni → Account e dispositivi → «Collezione sul server». Dopo una conferma la
+collezione, i prezzi letti e le foto dell'account spariscono dal server: da subito non li vede più nessuno, nemmeno i tuoi
+telefoni, e la pulizia giornaliera del server li cancella del tutto entro pochi giorni (se sono molti, in più giorni). Sul
+telefono resta tutto; i tuoi telefoni smettono di tenersi uguali. Restano sul server l'account (nome utente, email,
+dispositivi) e, se li hai accesi, i prezzi condivisi. Da quel momento il server non accetta più dati della collezione da
+nessun telefono dell'account, nemmeno da quelli con una versione precedente dell'app. Se la riaccendi, i dati del
+telefono da cui la riaccendi tornano sul server.</p>
 <p>Le foto che un telefono scarica dalle pagine Cardmarket (per esempio quelle dei motivi dei reverse e degli stampini, o di
 una carta che non ha ancora un'immagine) vanno sul server e arrivano agli altri telefoni dello stesso account, che così non
 devono scaricarle di nuovo. Ogni foto è al massimo di 1 MB e un account ne tiene fino a 50 MB in tutto; un telefono le scarica
-solo se gli servono. Le foto di un account non le vede nessun altro account; si cancellano con l'account, dalla pulizia
-giornaliera del server (se sono molte, in più giorni). Ogni foto viaggia con una riga di accompagnamento (prodotto, carta e
-versione a cui è attaccata, data) che passa con la sincronizzazione come le altre preferenze.</p>
+solo se gli servono. Le foto di un account non le vede nessun altro account; si cancellano con l'account o spegnendo la
+collezione sul server, dalla pulizia giornaliera del server (se sono molte, in più giorni). Ogni foto viaggia con una riga
+di accompagnamento (prodotto, carta e versione a cui è attaccata, data) che passa con la sincronizzazione come le altre
+preferenze.</p>
 <p>Se cancelli una riga sul telefono, sul server ne resta una traccia con i suoi ultimi dati (serve a far tornare la riga
-se un altro telefono la modifica) finché non cancelli l'account.</p>
+se un altro telefono la modifica) finché non spegni la collezione sul server o non cancelli l'account.</p>
 <p>Per dividere le letture automatiche dei prezzi tra i tuoi telefoni, il server tiene per mezz'ora quali pagine
-Cardmarket ha prenotato ogni telefono, e un eventuale blocco di Cardmarket segnalato da un telefono, che vale al massimo 2 ore.</p>
+Cardmarket ha prenotato ogni telefono, e un eventuale blocco di Cardmarket segnalato da un telefono, che vale al massimo 2
+ore. Con la collezione sul server spenta i telefoni con la versione 2.0 non prenotano: ognuno legge i suoi prezzi da
+solo.</p>
 <p>Il server è nell'account Cloudflare dello sviluppatore, che tecnicamente può vedere i dati che ci sono sopra.</p>
 <p>Lo sviluppatore può cancellare dal server un account usato in modo scorretto e bloccarne il nome: l'account, i suoi
 telefoni collegati, i dati della collezione sul server, le sue letture condivise e le sue foto si cancellano come con
@@ -132,11 +155,14 @@ ceduti a nessun altro.</p>
 <ul>
 <li><strong>Account e tutti i suoi dati sul server</strong> (nome utente, email, dispositivi, righe della collezione e
 tracce delle righe cancellate, prezzi, prenotazioni, letture condivise, foto): Impostazioni → Account e dispositivi →
-«Cancella l'account», con la password. I dati sul telefono restano. Le foto dell'account sul server le toglie la pulizia
-giornaliera, entro pochi giorni (se sono molte, in più giorni).</li>
+«Cancella l'account», con la password. Account, dispositivi, prenotazioni e letture condivise si cancellano subito; la
+collezione, i prezzi e le foto da subito non li vede più nessuno e la pulizia giornaliera del server li cancella entro
+pochi giorni (se sono molti, in più giorni). I dati sul telefono restano; per usare di nuovo l'app serve un account.</li>
+<li><strong>Solo la collezione sul server</strong> (righe della collezione, prezzi letti, foto): spegni «Collezione sul
+server» (vedi sopra). L'account resta.</li>
 <li><strong>Un dispositivo</strong>: «Togli» accanto al dispositivo, «Esci da tutti gli altri dispositivi» o «Esci da
 questo dispositivo». Il dispositivo si scollega e i suoi dati restano sul telefono; la collezione resta sul server finché
-non cancelli l'account.</li>
+non la spegni o non cancelli l'account.</li>
 <li><strong>L'email</strong>: «Togli» nella scheda Email dell'account.</li>
 <li><strong>Le letture condivise</strong>: spegni l'interruttore (non ne partono altre); quelle già sul server spariscono
 da sole dopo 7 giorni, o subito se cancelli l'account.</li>
@@ -147,6 +173,11 @@ qui sotto.</p>
 <h2>Backup</h2>
 <p>Puoi esportare un backup in un file o salvarlo in automatico in una cartella che scegli tu. Il file resta dove lo
 metti.</p>
+<p>Importare un backup su un telefono collegato a un account non lo scollega. Se l'account ha già dei dati della
+collezione, dopo il riavvio l'app chiede se tenerli o caricare sull'account quelli del backup, e i dati del backup vanno
+sul server solo se scegli di caricarli. Se invece sull'account non c'è ancora nessun dato della collezione, dopo il
+riavvio i dati del backup vanno sul server senza chiedere, come per un account nuovo. Prima di ricevere o caricare l'app
+fa un backup completo del telefono nella sua memoria (restano gli ultimi 3).</p>
 <p>Se sul telefono è attivo il backup automatico di Android sul tuo account Google, può includere il database e le
 impostazioni dell'app, secondo i termini di Google; non include il collegamento all'account Cardoteca di quel telefono.
 Lo sviluppatore non riceve questi backup.</p>
@@ -163,8 +194,9 @@ Google</a>, compresi i requisiti di utilizzo limitato.</p>
 Sicurezza → App e servizi di terze parti. Per cancellare i backup, elimina la cartella «Cardoteca» dal tuo Drive.</p>
 
 <h2>Niente pubblicità né tracciamento</h2>
-<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento aggiunti dallo sviluppatore. L'unica cosa che manda
-anche senza account è il conteggio anonimo delle installazioni (vedi sopra). Gli errori restano in
+<p>L'app non contiene pubblicità, statistiche d'uso o strumenti di tracciamento aggiunti dallo sviluppatore. Prima di avere
+un account manda solo il conteggio anonimo delle installazioni e la richiesta che chiede se serve un account (vedi sopra).
+Gli errori restano in
 Impostazioni → Diagnostica sul telefono, e partono solo se decidi tu di condividerli.</p>
 <p>Per riconoscere le carte e i codici QR con la fotocamera l'app usa le librerie ML Kit di Google, che lavorano sul
 telefono: le immagini non vengono inviate. Secondo la documentazione di Google, ML Kit può però mandare a Google dati
